@@ -121,7 +121,7 @@ nav {
 .mobile-menu-btn {
   display: none;
   flex-direction: column;
-  /* gap: 5px; */
+  gap: 5px;
   background: transparent;
   border: none;
   cursor: pointer;
