@@ -253,8 +253,8 @@
 
         /* Booking Page Styles */
         .booking-hero {
-            padding-top: 150px;
-            padding-bottom: 5px;
+            padding-top: 140px;
+            padding-bottom: 30px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -272,13 +272,13 @@
         }
 
         .booking-hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            margin-bottom: 0.8rem;
             color: var(--primary);
         }
 
         .booking-hero p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: var(--gray);
             max-width: 600px;
             margin: 0 auto;
@@ -287,37 +287,38 @@
         .service-highlight {
             background: rgba(0, 102, 255, 0.1);
             color: var(--secondary);
-            padding: 10px 20px;
-            border-radius: 25px;
+            padding: 8px 18px;
+            border-radius: 20px;
             display: inline-block;
-            margin: 20px 0;
+            margin: 15px 0 5px 0;
             font-weight: 600;
             border: 1px solid rgba(0, 102, 255, 0.3);
+            font-size: 0.95rem;
         }
 
         .booking-container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 50px 20px;
+            padding: 40px 20px;
         }
 
         /* Single Container Layout */
         .booking-main-container {
             background: rgba(10, 10, 26, 0.7);
-            border-radius: 20px;
-            padding: 50px;
+            border-radius: 16px;
+            padding: 35px 40px;
             border: 1px solid rgba(255, 255, 255, 0.05);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
             display: flex;
             flex-direction: column;
-            gap: 40px;
+            gap: 30px;
         }
 
         /* Step by Step Sections */
         .booking-step {
             background: rgba(255, 255, 255, 0.02);
-            border-radius: 15px;
-            padding: 30px;
+            border-radius: 12px;
+            padding: 25px;
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.5s ease;
             display: none;
@@ -340,15 +341,15 @@
         .step-header {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .step-number {
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             background: linear-gradient(45deg, var(--primary), var(--secondary));
             color: var(--dark);
             border-radius: 50%;
@@ -356,56 +357,117 @@
             align-items: center;
             justify-content: center;
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
         .step-title {
             color: var(--secondary);
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-family: 'Orbitron', sans-serif;
             margin: 0;
         }
 
-        /* Progress Indicator */
+        /* Progress Indicator - Redesigned */
         .progress-indicator {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 40px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            gap: 8px;
+            margin-bottom: 25px;
+            padding: 0px 20px;
+            background: transparent;
+            border-radius: 0;
+            border: none;
         }
 
         .progress-step {
-            width: 12px;
-            height: 12px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.08);
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.4);
+            position: relative;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .progress-step::before {
+            content: attr(data-step);
+            position: absolute;
         }
 
         .progress-step.active {
-            background: var(--primary);
-            box-shadow: 0 0 10px rgba(0, 102, 255, 0.5);
-            transform: scale(1.3);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-color: var(--primary);
+            color: white;
+            box-shadow: 0 0 20px rgba(0, 102, 255, 0.4), 0 0 40px rgba(0, 242, 255, 0.2);
+            transform: scale(1.1);
         }
 
         .progress-step.completed {
-            background: var(--secondary);
+            background: rgba(0, 242, 255, 0.15);
+            border-color: var(--secondary);
+            color: var(--secondary);
+        }
+
+        .progress-step.completed::before {
+            content: '✓';
+            font-size: 0.9rem;
+        }
+
+        .progress-step:hover {
+            transform: scale(1.05);
+        }
+
+        .progress-step.active:hover {
+            transform: scale(1.15);
         }
 
         .progress-line {
-            width: 40px;
+            width: 50px;
             height: 2px;
             background: rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
         }
 
-        .progress-line.completed {
-            background: var(--secondary);
+        .progress-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.4s ease;
+        }
+
+        .progress-line.completed::before {
+            width: 100%;
+        }
+
+        /* Progress Step Labels */
+        .progress-step-label {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .progress-step {
+                width: 36px;
+                height: 36px;
+                font-size: 0.85rem;
+            }
+
+            .progress-line {
+                width: 70px;
+            }
         }
 
         /* Navigation Buttons */
@@ -468,26 +530,76 @@
 
         .discovery-subtitle {
             color: var(--gray);
-            font-size: 1.1rem;
-            margin-bottom: 25px;
+            font-size: 1rem;
+            margin-bottom: 20px;
             text-align: center;
             background: rgba(0, 102, 255, 0.1);
-            padding: 15px;
-            border-radius: 10px;
+            padding: 12px 15px;
+            border-radius: 8px;
             border: 1px solid rgba(0, 102, 255, 0.2);
         }
 
+        /* Compact Session Overview with Grid */
+        .session-overview-compact {
+            margin-bottom: 20px;
+        }
+
+        .session-title {
+            color: var(--light);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+        }
+
+        .session-items-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px 15px;
+            margin-bottom: 20px;
+        }
+
+        .session-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 10px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .session-item:hover {
+            background: rgba(0, 102, 255, 0.05);
+            border-color: rgba(0, 102, 255, 0.2);
+            transform: translateX(3px);
+        }
+
+        .session-item i {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .session-item span {
+            color: var(--gray);
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        /* Legacy styles - keeping for compatibility */
         .session-overview {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-bottom: 25px;
+            gap: 25px;
+            margin-bottom: 20px;
         }
 
         .session-details h4 {
             color: var(--light);
-            font-size: 1.3rem;
-            margin-bottom: 20px;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
             font-family: 'Orbitron', sans-serif;
         }
 
@@ -499,10 +611,11 @@
 
         .discovery-list li {
             color: var(--gray);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             padding-left: 25px;
             position: relative;
-            line-height: 1.6;
+            line-height: 1.5;
+            font-size: 0.95rem;
         }
 
         .discovery-list li::before {
@@ -516,23 +629,23 @@
 
         .discovery-goal {
             background: rgba(0, 102, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid var(--primary);
-            grid-column: 1 / -1;
+            padding: 10px 18px;
+            border-radius: 8px;
+            border-left: 3px solid var(--primary);
         }
 
         .discovery-goal strong {
             color: var(--secondary);
             display: block;
-            margin-bottom: 10px;
-            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-size: 0.90rem;
         }
 
         .discovery-goal p {
             color: var(--gray);
             margin: 0;
-            line-height: 1.6;
+            line-height: 1.5;
+            font-size: 0.70rem;
         }
 
         /* Step 2 - Date Selection */
@@ -542,11 +655,11 @@
 
         .calendar-container {
             background: rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
-            padding: 30px;
+            border-radius: 12px;
+            padding: 25px;
             border: 2px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
-            max-width: 400px;
+            max-width: 380px;
             margin: 0 auto;
         }
 
@@ -559,11 +672,11 @@
             background: transparent;
             border: none;
             color: var(--light);
-            font-size: 1.3rem;
-            padding: 20px;
+            font-size: 1.2rem;
+            padding: 15px;
             text-align: center;
             cursor: pointer;
-            border-radius: 10px;
+            border-radius: 8px;
             transition: all 0.3s ease;
             font-weight: 500;
         }
@@ -589,29 +702,30 @@
 
         .time-slots-container {
             background: rgba(255, 255, 255, 0.03);
-            padding: 25px;
-            border-radius: 15px;
+            padding: 18px;
+            border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.05);
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .time-slots {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 15px;
-            max-width: 700px;
-            margin: 0 auto;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 8px;
+            max-width: 100%;
         }
 
         .time-slot {
             background: rgba(255, 255, 255, 0.05);
             border: 2px solid rgba(255, 255, 255, 0.1);
             color: var(--gray);
-            padding: 15px 10px;
+            padding: 10px 8px;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 6px;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-size: 1rem;
+            font-size: 0.88rem;
             font-weight: 500;
         }
 
@@ -647,13 +761,13 @@
         .form-fields {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 18px;
         }
 
         .form-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            gap: 18px;
         }
 
         .form-group-page {
@@ -667,12 +781,12 @@
 
         .form-group-page label {
             color: var(--light);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             font-weight: 500;
             display: flex;
             align-items: center;
             gap: 5px;
-            font-size: 1rem;
+            font-size: 0.95rem;
         }
 
         .form-group-page label span {
@@ -683,10 +797,10 @@
         .form-group-page textarea {
             background: rgba(255, 255, 255, 0.05);
             border: 2px solid rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 15px 18px;
+            border-radius: 8px;
+            padding: 12px 15px;
             color: var(--light);
-            font-size: 1rem;
+            font-size: 0.95rem;
             transition: all 0.3s ease;
         }
 
@@ -699,13 +813,13 @@
 
         .form-group-page textarea {
             resize: vertical;
-            min-height: 120px;
+            min-height: 100px;
             font-family: 'Poppins', sans-serif;
         }
 
         /* Submit Button */
         .form-actions {
-            margin-top: 30px;
+            margin-top: 25px;
             text-align: center;
         }
 
@@ -713,18 +827,18 @@
             background: linear-gradient(45deg, var(--primary), var(--secondary));
             color: var(--dark);
             border: none;
-            padding: 18px 40px;
-            border-radius: 15px;
-            font-size: 1.2rem;
+            padding: 14px 35px;
+            border-radius: 12px;
+            font-size: 1.05rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 10px;
             box-shadow: 0 8px 25px rgba(0, 102, 255, 0.2);
-            min-width: 280px;
+            min-width: 260px;
         }
 
         .submit-btn-page:hover {
@@ -839,54 +953,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Progress Indicator */
-        .progress-indicator {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 30px;
-            padding: 20px 0;
-        }
-
-        .progress-step {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: rgba(100, 116, 139, 0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--light);
-            font-weight: 600;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .progress-step.active {
-            background: var(--secondary);
-            color: var(--dark);
-            transform: scale(1.1);
-            box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
-        }
-
-        .progress-step.completed {
-            background: var(--primary);
-            color: var(--light);
-        }
-
-        .progress-line {
-            width: 60px;
-            height: 3px;
-            background: rgba(100, 116, 139, 0.3);
-            margin: 0 10px;
-            transition: background 0.3s ease;
-        }
-
-        .progress-line.completed {
-            background: var(--primary);
-        }
-
         /* Navigation Button Styles */
         .nav-buttons {
             display: flex;
@@ -950,7 +1016,19 @@
             }
 
             .time-slots {
-                grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 8px;
+            }
+
+            .time-slots-container {
+                max-width: 550px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .session-items-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
             }
         }
 
@@ -998,6 +1076,12 @@
                 font-size: 1.3rem;
             }
 
+            /* Grid responsive for mobile */
+            .session-items-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
             .session-overview {
                 grid-template-columns: 1fr;
                 gap: 20px;
@@ -1013,13 +1097,18 @@
             }
 
             .time-slots {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 12px;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
             }
 
             .time-slot {
-                padding: 12px 8px;
-                font-size: 0.95rem;
+                padding: 10px 6px;
+                font-size: 0.88rem;
+            }
+
+            .time-slots-container {
+                max-width: 100%;
+                padding: 15px;
             }
 
             .form-row {
@@ -1035,19 +1124,18 @@
 
             /* Step System Mobile Styles */
             .progress-indicator {
-                margin-bottom: 20px;
-                padding: 15px 0;
+                margin-bottom: 0px;
+                padding: 12px 0;
             }
 
             .progress-step {
-                width: 35px;
-                height: 35px;
-                font-size: 14px;
+                width: 28px;
+                height: 28px;
+                font-size: 0.7rem;
             }
 
             .progress-line {
-                width: 40px;
-                margin: 0 5px;
+                width: 35px;
             }
 
             .nav-buttons {
@@ -1118,13 +1206,17 @@
             }
 
             .time-slots {
-                grid-template-columns: 1fr;
-                gap: 10px;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
             }
 
             .time-slot {
-                padding: 15px 10px;
-                font-size: 1rem;
+                padding: 12px 8px;
+                font-size: 0.9rem;
+            }
+
+            .time-slots-container {
+                padding: 12px;
             }
 
             .form-group-page input,
@@ -1237,13 +1329,13 @@
             
             <!-- Progress Indicator -->
             <div class="progress-indicator">
-                <div class="progress-step active" id="progress1"></div>
+                <div class="progress-step active" id="progress1" data-step="1"></div>
                 <div class="progress-line" id="line1"></div>
-                <div class="progress-step" id="progress2"></div>
+                <div class="progress-step" id="progress2" data-step="2"></div>
                 <div class="progress-line" id="line2"></div>
-                <div class="progress-step" id="progress3"></div>
+                <div class="progress-step" id="progress3" data-step="3"></div>
                 <div class="progress-line" id="line3"></div>
-                <div class="progress-step" id="progress4"></div>
+                <div class="progress-step" id="progress4" data-step="4"></div>
             </div>
             
             <!-- Step 1: Discovery Call Information -->
@@ -1257,16 +1349,29 @@
                     Duration: 30 Minutes | Mode: Web Conference
                 </div>
                 
-                <div class="session-overview">
-                    <div class="session-details">
-                        <h4>In this quick session, we'll cover:</h4>
-                        <ul class="discovery-list">
-                            <li>Introduction & Requirement Understanding</li>
-                            <li>Relevant Use Case Demo</li>
-                            <li>Technology Solutions & Offerings</li>
-                            <li>Project Roadmap & Next Steps</li>
-                            <li>Q&A Session</li>
-                        </ul>
+                <div class="session-overview-compact">
+                    <h4 class="session-title">In this quick session, we'll cover:</h4>
+                    <div class="session-items-grid">
+                        <div class="session-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Introduction & Requirement Understanding</span>
+                        </div>
+                        <div class="session-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Relevant Use Case Demo</span>
+                        </div>
+                        <div class="session-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Technology Solutions & Offerings</span>
+                        </div>
+                        <div class="session-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Project Roadmap & Next Steps</span>
+                        </div>
+                        <!-- <div class="session-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Q&A Session</span>
+                        </div> -->
                     </div>
                     
                     <div class="discovery-goal">
