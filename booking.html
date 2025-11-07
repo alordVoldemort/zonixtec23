@@ -1223,7 +1223,7 @@
     <!-- Booking Hero -->
     <section class="booking-hero">
         <div class="container">
-            <h1>Book Your Free 30-Minute Consultation</h1>
+            <h1 id="pageTitle">Book Your Free 30-Minute Consultation</h1>
             <p>Let's discuss how we can help transform your business with our expert solutions</p>
             <div class="service-highlight" id="serviceHighlight">
                 <!-- This will be populated by JavaScript based on the service parameter -->
@@ -1425,13 +1425,18 @@
         // Update service highlight based on URL parameter
         document.addEventListener('DOMContentLoaded', function() {
             const serviceHighlight = document.getElementById('serviceHighlight');
+            const pageTitle = document.getElementById('pageTitle');
             
             if (serviceParam && serviceMapping[serviceParam]) {
                 const serviceName = serviceMapping[serviceParam];
                 serviceHighlight.textContent = `Consultation for ${serviceName}`;
                 serviceHighlight.style.display = 'inline-block';
+                
+                // Update page title to show "Book Call for [Service Name]"
+                pageTitle.textContent = `Book Call for ${serviceName}`;
             } else {
                 serviceHighlight.style.display = 'none';
+                pageTitle.textContent = 'Book Your Free 30-Minute Consultation';
             }
 
             // Initialize calendar
