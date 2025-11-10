@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mobile App Development - Zonixtec</title>
     <meta name="description" content="Unlock business growth with Zonixtec's mobile app development services. We design, develop, and optimize high-performing iOS & Android apps tailored to your goals.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -419,7 +419,7 @@
             transform: rotate(180deg);
         }
 
-        .dropdown-content {
+        /* .dropdown-content {
             display: none;
             position: absolute;
             top: 100%;
@@ -459,7 +459,7 @@
             color: var(--secondary);
             border-left: 4px solid var(--secondary);
             transform: translateX(5px);
-        }
+        } */
 
         .dropdown-scroll {
     max-height: 300px; /* Slightly less than parent to account for padding */
@@ -1819,25 +1819,25 @@ document.querySelectorAll('.footer-dropdown-header').forEach(header => {
         });
         
         // Close menu when clicking outside of it
-        document.addEventListener('click', function(event) {
-            const isClickInsideNav = navLinks.contains(event.target);
-            const isClickOnMenuBtn = mobileMenuBtn.contains(event.target);
+        // document.addEventListener('click', function(event) {
+        //     const isClickInsideNav = navLinks.contains(event.target);
+        //     const isClickOnMenuBtn = mobileMenuBtn.contains(event.target);
             
-            if (navLinks.classList.contains('active') && !isClickInsideNav && !isClickOnMenuBtn) {
-                navLinks.classList.remove('active');
-                menuIcon.classList.remove('fa-times');
-                menuIcon.classList.add('fa-bars');
-            }
-        });
+        //     if (navLinks.classList.contains('active') && !isClickInsideNav && !isClickOnMenuBtn) {
+        //         navLinks.classList.remove('active');
+        //         menuIcon.classList.remove('fa-times');
+        //         menuIcon.classList.add('fa-bars');
+        //     }
+        // });
         
         // Close menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                menuIcon.classList.remove('fa-times');
-                menuIcon.classList.add('fa-bars');
-            });
-        });
+        // document.querySelectorAll('.nav-links a').forEach(link => {
+        //     link.addEventListener('click', () => {
+        //         navLinks.classList.remove('active');
+        //         menuIcon.classList.remove('fa-times');
+        //         menuIcon.classList.add('fa-bars');
+        //     });
+        // });
         
         // FAQ functionality
         document.querySelectorAll('.faq-question').forEach(question => {
