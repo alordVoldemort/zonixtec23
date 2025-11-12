@@ -65,7 +65,7 @@
         .containerr {
             width: 100%;
             overflow: hidden;
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -216,8 +216,9 @@
             /* background: rgba(30, 41, 59, 0.9);
             border-radius: 15px;
             padding: 39px 25px 34px 25px; */
-            max-width: 300px;
-            min-width: 220px;
+            /* max-width: 300px; */
+            max-width: 1900px;
+            min-width: 420px;
             flex: 1 1 280px;
             text-align: center;
             box-shadow: 0 8px 28px 0 rgba(0, 36, 64, .09);
@@ -228,7 +229,7 @@
 
         .feature-box img {
             width: 100%;
-            max-width: 256px;
+            max-width: 456px;
             margin-bottom: 18px;
             filter: drop-shadow(0px 5px 10px #00f2ff33);
         }
@@ -245,6 +246,7 @@
             color: #CBD5E1;
             font-size: .98rem;
             min-height: 72px;
+            margin: 10px;
         }
 
         .feature-box:hover {
@@ -305,7 +307,8 @@
         .testimonial-container {
             display: flex;
             gap: 34px;
-            transition: transform 0.4s ease-in-out;
+            /* transition: transform 0.4s ease-in-out; */
+                transition: transform 0.9s cubic-bezier(0.25, 0.1, 0.25, 1); /* smoother & slower */
             padding: 20px 0;
         }
 
@@ -344,27 +347,27 @@
         }
 
         .testimonial-controls {
-            display: inline-flex;
+            display: none;
             gap: 18px;
             justify-content: center;
             margin-bottom: 25px;
         }
 
         .testimonial-controls1 {
-            display: inline-flex;
+            display: none;
             gap: 18px;
             justify-content: center;
             margin-bottom: 25px;
         }
 
         .testimonial-controls2 {
-            display: inline-flex;
+            display: none;
             gap: 18px;
             justify-content: center;
             margin-bottom: 25px;
         }
         .testimonial-controls3 {
-            display: inline-flex;
+            display: none;
             gap: 18px;
             justify-content: center;
             margin-bottom: 25px;
@@ -642,6 +645,42 @@
 
         @media (max-width: 768px) {
 
+
+             .containerr {
+            width: 100%;
+            overflow: hidden;
+            max-width: 1100px;
+            margin: 0 auto;
+            
+        }
+
+
+
+
+
+            .feature-box {
+            /* background: rgba(30, 41, 59, 0.9);
+            border-radius: 15px;
+            padding: 39px 25px 34px 25px; */
+            max-width: 300px;
+            /* max-width: 1900px; */
+            min-width: 352px;
+            flex: 1 1 280px;
+            text-align: center;
+            box-shadow: 0 8px 28px 0 rgba(0, 36, 64, .09);
+            border: 1px solid #23334a;
+            position: relative;
+            transition: transform 0.18s;
+        }
+
+        .feature-box img {
+            width: 100%;
+            max-width: 456px;
+            margin-bottom: 18px;
+            filter: drop-shadow(0px 5px 10px #00f2ff33);
+        }
+
+
             .benefits-row {
             display: list-item;
             flex-wrap: wrap;
@@ -840,67 +879,67 @@
         </section>
 
         <!-- What Makes Different Section -->
+        <!-- What Makes Zonixtec Different Section -->
         <section class="section-padding">
             <h2 class="section-title">What Makes Zonixtec Different</h2>
             <p class="section-subtitle">Your Trusted Partner for Reliable & Scalable Digital Solutions</p>
-            <div class="container">
-                <div class="testimonial-controls1">
-                    <button id="featurePrev" class="testimonial-nav1" aria-label="Previous">
+        
+            <div class="containerr">
+                <!-- Navigation Buttons -->
+                <div class="testimonial-controls2">
+                    <button id="featurePrev" class="testimonial-nav2" aria-label="Previous">
                         <i class="fa fa-chevron-circle-left"></i>
                     </button>
-                    <button id="featureNext" class="testimonial-nav1" aria-label="Next">
+                    <button id="featureNext" class="testimonial-nav2" aria-label="Next">
                         <i class="fa fa-chevron-circle-right"></i>
                     </button>
                 </div>
-                
-                <div class="containerr testimonial1">
+        
+                <!-- Slider Wrapper -->
+                <div class="testimonial-wrapper1">
                     <div id="feature-list" class="testimonial-container">
-                    <div class="feature-box">
-                        <img src="./Assets/Image (1).png"
-                            style="width: 100%; height: 200px; background: rgba(100, 200, 255, 0.1); border-radius: 10px; margin-bottom: 18px; display: flex; align-items: center; justify-content: center; color: var(--secondary);">
-                        </img>
-                        <h3>Complete In-House Development Team</h3>
-                        <p>Planning, design, coding, testing, deployment, and maintenance — everything is handled by our
+                        <!-- Feature 1 -->
+                        <div class="feature-box">
+                            <img src="./Assets/Image.png" alt="">
+                            <h3>1. Built Around Your Business, Not the Other Way Around</h3>
+                            <p>We design custom solutions that match your exact processes, workflows, and goals. No generic
+                            templates. No force-fitting. Just technology that fits perfectly.</p>
+                        </div>
+                        <div class="feature-box">
+                            <img src="./Assets/Image (1).png" alt="">
+                            <h3>2.Complete In-House Development Team</h3>
+                            <p>Planning, design, coding, testing, deployment, and maintenance — everything is handled by our
                             skilled in-house engineers. This means faster delivery and better quality control.</p>
-                    </div>
-                    <div class="feature-box">
-                        <img src="./Assets/Image (1).png"
-                            style="width: 100%; height: 200px; background: rgba(100, 200, 255, 0.1); border-radius: 10px; margin-bottom: 18px; display: flex; align-items: center; justify-content: center; color: var(--secondary);">
-                        </img>
-                        <h3>Complete In-House Development Team</h3>
-                        <p>Planning, design, coding, testing, deployment, and maintenance — everything is handled by our
-                            skilled in-house engineers. This means faster delivery and better quality control.</p>
-                    </div>
-                    <div class="feature-box">
-                        <img src="./Assets/Image (1).png"
-                            style="width: 100%; height: 200px; background: rgba(100, 200, 255, 0.1); border-radius: 10px; margin-bottom: 18px; display: flex; align-items: center; justify-content: center; color: var(--secondary);">
-                        Feature Image</img>
-                        <h3>Reliable, Secure & Scalable Technology</h3>
-                        <p>Every solution is built to perform consistently and grow with your business. Whether you're a
+                        </div>
+        
+                        <!-- Feature 2 -->
+                        <div class="feature-box">
+                            <img src="./Assets/Image (2).png" alt="">
+                            <h3>3. Reliable, Secure & Scalable Technology</h3>
+                            <p>Every solution is built to perform consistently and grow with your business. Whether you're a
                             startup or an enterprise, we develop systems that stay fast, stable, and future-ready.</p>
-                    </div>
-                    <div class="feature-box">
-                        <img src="./Assets/Image (1).png"
-                            style="width: 100%; height: 200px; background: rgba(100, 200, 255, 0.1); border-radius: 10px; margin-bottom: 18px; display: flex; align-items: center; justify-content: center; color: var(--secondary);">
-                        Feature Image</img>
-                        <h3>Clear Communication & Transparent Processes</h3>
-                        <p>You'll always know what's happening with your project. We share progress openly, solve
-                            concerns
+                        </div>
+        
+                        <!-- Feature 3 -->
+                        <div class="feature-box">
+                            <img src="./Assets/Image (3).png" alt="">
+                            <h3>4. Clear Communication & Transparent Processes</h3>
+                            <p>You’ll always know what’s happening in your project. We share progress openly, solve concerns
                             quickly, and ensure a smooth development experience from start to finish.</p>
-                    </div>
-                    <div class="feature-box">
-                        <img src="./Assets/Image (1).png"
-                            style="width: 100%; height: 200px; background: rgba(100, 200, 255, 0.1); border-radius: 10px; margin-bottom: 18px; display: flex; align-items: center; justify-content: center; color: var(--secondary);">
-                        Feature Image</img>
-                        <h3>Clear Communication & Transparent Processes</h3>
-                        <p>You'll always know what's happening with your project. We share progress openly, solve
-                            concerns
-                            quickly, and ensure a smooth development experience from start to finish.</p>
+                        </div>
+        
+                        <!-- Feature 4 -->
+                        <div class="feature-box">
+                            <img src="./Assets/Image (4).png" alt="">
+                            <h3>5. Long-Term Support You Can Count On</h3>
+                            <p>We stay with you even after launch — ensuring updates, improvements, and quick issue
+                            resolution. Your business evolves, and so will your software.</p>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
+
 
 
 
@@ -931,13 +970,13 @@
                             <!-- <img src="./Assets/Faster workflow execution.png"
                                                                                     style="width: 100%; height: 150px; background: rgba(100, 200, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--secondary); margin-bottom: 14px;">
                                                                                     </img> -->
-                            <img src="./Assets/Faster workflow execution.png"> </img>
+                            <img src="./Assets/Better customer experience.png"> </img>
                         </div>
                         <div class="benefit-box">
-                            <img src="./Assets/Faster workflow execution.png"> </img>
+                            <img src="./Assets/Higher productivity.png"> </img>
                         </div>
                         <div class="benefit-box">
-                            <img src="./Assets/Faster workflow execution.png"> </img>
+                            <img src="./Assets/Scalable systems for future growth.png"> </img>
                         </div>
 
                     </div>
@@ -1232,7 +1271,7 @@
         function startFeatureAutoSlide() {
             featureAutoSlide = setInterval(() => {
                 scrollFeatures(1);
-            }, 1000); // every 4 seconds
+            }, 1000); // every 1 seconds
         }
 
         function stopFeatureAutoSlide() {
@@ -1306,7 +1345,7 @@
         function startTestimonialAutoSlide() {
             testimonialAutoSlide = setInterval(() => {
                 scrollTestimonials(1);
-            }, 1000); // every 5 seconds
+            }, 1000); // every 1 seconds
         }
 
         function stopTestimonialAutoSlide() {
@@ -1337,6 +1376,7 @@
         updateTestimonialButtons();
         startTestimonialAutoSlide();
     </script>
+    
     <script>
         // Header animation on load
         document.addEventListener('DOMContentLoaded', function () {
