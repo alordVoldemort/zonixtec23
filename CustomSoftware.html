@@ -479,11 +479,7 @@ We design scalable, secure, and user-friendly applications tailored to your busi
             line-height: 1.5;
         }
 
-
-
         /* Technology Stack Section */
-
-        /* Technology Stack */
         .tech-section {
             background: rgba(10, 10, 26, 0.7);
             border-radius: 10px;
@@ -513,6 +509,7 @@ We design scalable, secure, and user-friendly applications tailored to your busi
         .tech-category h3 {
             color: var(--light);
             margin-bottom: 20px;
+            margin-top: 30px;
             font-size: 1.3rem;
             font-family: 'Orbitron', sans-serif;
         }
@@ -528,6 +525,15 @@ We design scalable, secure, and user-friendly applications tailored to your busi
             padding: 12px 15px;
             border-radius: 8px;
             color: var(--gray);
+            transition: all 0.3s ease;
+        }
+
+        .tech-itemm {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 12px 15px;
+            border-radius: 8px;
+            color: var(--gray);
+            margin-top: 30px;
             transition: all 0.3s ease;
         }
         
@@ -1715,7 +1721,7 @@ img {
         <div class="tech-category">
             <h3>Databases</h3>
             <div class="tech-items">
-                <div class="tech-item">MongoDB</div>
+                <div class="tech-itemm">MongoDB</div>
                 <div class="tech-item">MySQL</div>
                 <div class="tech-item">PostgreSQL</div>
             </div>
@@ -1724,7 +1730,7 @@ img {
         <div class="tech-category">
             <h3>CMS Platforms</h3>
             <div class="tech-items">
-                <div class="tech-item">WordPress</div>
+                <div class="tech-itemm">WordPress</div>
                 <div class="tech-item">Drupal</div>
                 <div class="tech-item">Strapi</div>
                 <div class="tech-item">Shopify</div>

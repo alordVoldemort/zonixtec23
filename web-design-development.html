@@ -513,14 +513,14 @@
         .challenges-container {
             background: rgba(15, 23, 42, 0.5);
             border-radius: 20px;
-            padding: 50px;
+            padding: 13px;
             border: 1px solid rgba(100, 116, 139, 0.2);
         }
 
         .challenges-title {
             text-align: center;
             font-family: 'Orbitron', sans-serif;
-            font-size: 2.2rem;
+            font-size: 1.5rem;
             margin-bottom: 50px;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             -webkit-background-clip: text;
@@ -1690,13 +1690,23 @@
             }
         });
 
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const item = question.parentElement;
-                item.classList.toggle('active');
-            });
+        // FAQ Accordion - Only one open at a time
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const wasActive = item.classList.contains('active');
+        
+        // Close all FAQ items first
+        document.querySelectorAll('.faq-item').forEach(faqItem => {
+            faqItem.classList.remove('active');
         });
+        
+        // If the clicked item wasn't active, open it
+        if (!wasActive) {
+            item.classList.add('active');
+        }
+    });
+});
     </script>
 
     <script src="Customscroll.js"></script>
