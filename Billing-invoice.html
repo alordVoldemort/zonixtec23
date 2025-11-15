@@ -314,7 +314,7 @@
         .hero-title span {
             margin-top: 20px;
             background: var(--tech-gradient);
-            padding: 50px;
+            padding: 4px;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -393,6 +393,33 @@
             font-weight: 600;
         }
 
+         /* Advantage Section */
+        .advantage-section {
+            margin-bottom: 60px;
+        }
+
+        .advantage-text p {
+            margin-bottom: 20px;
+        }
+
+        .advantage-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .advantage-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .advantage-list i {
+            color: var(--secondary);
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+
         /* Features Grid */
         .features-grid {
             display: grid;
@@ -442,6 +469,57 @@
         .feature-description {
             color: var(--gray);
             line-height: 1.6;
+        }
+
+        /* Features Section */
+        .features-section {
+            margin-bottom: 60px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-item {
+            background: rgba(10, 10, 26, 0.7);
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            border-color: var(--success);
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(39, 174, 96, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--success);
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .feature-content h3 {
+            color: var(--light);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-content p {
+            color: var(--gray);
+            margin: 0;
         }
 
         /* Challenges Section */
@@ -1498,12 +1576,8 @@ img {
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">Billing & <span>Invoice Software</span></h1>
-                    <p class="hero-subtitle">Automate Transactions. Accelerate Growth.</p>
-                    <p class="hero-description">At Zonixtec, we build intelligent billing and invoicing systems that
-                        help businesses simplify financial operations. Our solutions automate invoice creation, payment
-                        tracking, and financial reporting—reducing errors and saving valuable time. With real-time
-                        insights and seamless integrations, you can stay focused on what matters most: running your
-                        business.</p>
+                    <p class="hero-description">Our solutions automate invoice creation, payment
+                        tracking, and financial reporting — reducing errors and saving valuable time.</p>
                     <a href="#contact" class="cta-button">Let's Simplify Your Billing Process</a>
                 </div>
                 <div class="hero-visual">
@@ -1554,11 +1628,12 @@ img {
     </section>
 
     <!-- Features Section -->
+    
     <section class="section-padding">
         <div class="container">
             <h2 class="section-title">Our Billing & <span>Invoice Solutions</span></h2>
             <p class="section-subtitle">Our billing and invoice systems are designed to handle complex financial
-                workflows with ease—no matter the scale of your business.</p>
+                workflows with ease — no matter the scale of your business.</p>
 
             <div class="features-grid">
                 <div class="feature-card">
@@ -1567,7 +1642,7 @@ img {
                     </div>
                     <h3 class="feature-title">Invoice Management</h3>
                     <p class="feature-description">Create, send, and track invoices automatically with branding and
-                        custom templates tailored to your business needs.</p>
+                        custom templates.</p>
                 </div>
 
                 <div class="feature-card">
@@ -1575,8 +1650,8 @@ img {
                         <i class="fas fa-credit-card"></i>
                     </div>
                     <h3 class="feature-title">Payment Integration</h3>
-                    <p class="feature-description">Accept secure payments through multiple gateways like Razorpay,
-                        Stripe, and PayPal with seamless integration.</p>
+                    <p class="feature-description"> Accept secure payments through multiple gateways like Razorpay,
+Stripe, and PayPal.</p>
                 </div>
 
                 <div class="feature-card">
@@ -1584,8 +1659,7 @@ img {
                         <i class="fas fa-sync-alt"></i>
                     </div>
                     <h3 class="feature-title">Recurring Billing</h3>
-                    <p class="feature-description">Automate subscription-based billing cycles with automated reminders
-                        and due alerts for consistent revenue.</p>
+                    <p class="feature-description"> Automate subscription-based billing cycles with reminders and due alerts.</p>
                 </div>
 
                 <div class="feature-card">
@@ -1593,32 +1667,94 @@ img {
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3 class="feature-title">Expense Tracking</h3>
-                    <p class="feature-description">Record and categorize expenses for accurate financial reports and
-                        better cash flow management.</p>
+                    <p class="feature-description">Record and categorize expenses for accurate financial reports.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-balance-scale"></i>
                     </div>
-                    <h3 class="feature-title">Tax & Compliance</h3>
-                    <p class="feature-description">Ensure GST, VAT, and regional compliance in every transaction with
-                        automated tax calculations.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3 class="feature-title">Multi-Currency Support</h3>
-                    <p class="feature-description">Handle international transactions with multi-currency and
-                        multi-language support for global businesses.</p>
+                    <h3 class="feature-title">Tax & Compliance Management</h3>
+                    <p class="feature-description">Ensure GST, VAT, and regional compliance in every
+transaction.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Challenges Section -->
+    <!-- Features Section -->
+     <section class="section-padding features-section">
+    <div class="container">
+            <div class="features-section">
+                <h2 class="section-title">Features of Our <span>Solutions</span></h2>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Intuitive UI/UX</h3>
+                            <p>Superior user experience designed to engage visitors and drive conversions.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>SEO-Optimized Structure</h3>
+                            <p>Built with search engine visibility in mind from the ground up.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Scalable Architecture</h3>
+                            <p>Future-proof solutions designed for long-term growth and expansion.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Fast-Loading Performance</h3>
+                            <p>Optimized for speed with mobile responsiveness as a core feature.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Secure Coding Practices</h3>
+                            <p>Robust security measures and data protection protocols implemented throughout.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Seamless Integration</h3>
+                            <p>Easy integration with APIs, CRMs, payment systems, and third-party services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+
+
     <!-- Challenges Section -->
 <section class="section-padding challenges-section">
     <div class="container">
@@ -1629,49 +1765,63 @@ img {
                     <div class="challenge-icon">
                         <i class="fas fa-exclamation-circle"></i>
                     </div>
-                    <p class="challenge-text">Manual data entry leads to errors that can result in revenue loss and client dissatisfaction</p>
+                    <p class="challenge-text">Manual invoice errors leading to revenue loss</p>
                 </div>
                 
                 <div class="challenge-item">
                     <div class="challenge-icon">
                         <i class="fas fa-exclamation-circle"></i>
                     </div>
-                    <p class="challenge-text">Slow invoicing processes cause delays in payments and complicate financial reconciliations</p>
+                    <p class="challenge-text">Delays in payments and reconciliations</p>
                 </div>
                 
                 <div class="challenge-item">
                     <div class="challenge-icon">
                         <i class="fas fa-exclamation-circle"></i>
                     </div>
-                    <p class="challenge-text">Lack of real-time insights into cash flow and financial health hinders strategic decision-making</p>
+                    <p class="challenge-text">Poor visibility into cash flow and finances</p>
                 </div>
                 
                 <div class="challenge-item">
                     <div class="challenge-icon">
                         <i class="fas fa-exclamation-circle"></i>
                     </div>
-                    <p class="challenge-text">Difficulty in maintaining accurate tax records and compliance reporting increases audit risks</p>
+                    <p class="challenge-text">Difficulty in tax and compliance reporting</p>
                 </div>
                 
                 <div class="challenge-item">
                     <div class="challenge-icon">
                         <i class="fas fa-exclamation-circle"></i>
                     </div>
-                    <p class="challenge-text">Manual handling of subscription payments leads to inefficiencies and potential revenue leakage</p>
+                    <p class="challenge-text">Lack of automation in recurring billing cycles</p>
                 </div>
                 
-                <div class="challenge-item">
-                    <div class="challenge-icon">
-                        <i class="fas fa-exclamation-circle"></i>
-                    </div>
-                    <p class="challenge-text">Inadequate reporting capabilities make it difficult to analyze business performance and trends</p>
-                </div>
             </div>
         </div>
     </div>
 </section>
 
-    <!-- Process Visualization -->
+    
+ <div class="advantage-section">
+                <h2 class="section-title">What We <span>Bring</span></h2>
+
+                <div class="advantage-content">
+                    <div style="text-align: center;">
+    <p>We go beyond just billing—we build intelligent financial ecosystems that optimize your revenue
+flow.</p>
+
+    <ul class="advantage-list" style="list-style: none; padding: 0; display: inline-block; text-align: left;">
+        <li><i class="fas fa-check"></i> Tailor-made invoicing modules for your business model</li>
+        <li><i class="fas fa-check"></i> Cloud-based system accessible from any device</li>
+        <li><i class="fas fa-check"></i> Integration with your existing ERP or CRM tools</li>
+        <li><i class="fas fa-check"></i> Real-time analytics for cash flow tracking</li>
+        <li><i class="fas fa-check"></i> Secure and compliant payment architecture</li>
+    </ul>
+</div>
+                </div>
+            </div>
+
+
     <!-- Process Section -->
 <div class="process-section">
     <h2 class="section-title">Our Development <span>Process</span></h2>
@@ -1872,10 +2022,9 @@ img {
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Any business—retail, SaaS, healthcare, or manufacturing—that manages regular transactions and
-                            clients benefits from an automated billing system. It's particularly valuable for businesses
-                            with recurring billing models, multiple payment methods, or complex tax compliance
-                            requirements.</p>
+                        <p>Any business—retail, SaaS, healthcare, or manufacturing—that manages regular transactions
+and clients benefits from it.
+</p>
                     </div>
                 </div>
 
@@ -1885,9 +2034,7 @@ img {
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes. Our software is fully compliant with GST and other local tax regulations. It
-                            automatically calculates taxes based on your business location and customer locations,
-                            generates compliant invoices, and prepares necessary reports for tax filing.</p>
+                        <p>Yes. Our software is fully compliant with GST and other local tax regulations.</p>
                     </div>
                 </div>
 
@@ -1897,9 +2044,7 @@ img {
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Absolutely. We support automated recurring billing and invoicing for subscription models. You
-                            can set up different billing cycles (monthly, quarterly, annually), automate payment
-                            collection, and send automated reminders for upcoming or failed payments.</p>
+                        <p>Absolutely. We support automated recurring billing and invoicing for subscription models.</p>
                     </div>
                 </div>
 
@@ -1909,9 +2054,7 @@ img {
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes, we can integrate with popular accounting tools like QuickBooks, Zoho Books, Tally, and
-                            others. Our systems use APIs to ensure seamless data synchronization between your billing
-                            system and accounting software.</p>
+                        <p>Yes, we can integrate with tools like QuickBooks, Zoho Books, and Tally.</p>
                     </div>
                 </div>
 
@@ -1921,17 +2064,13 @@ img {
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>100%. All data is encrypted, backed up, and protected using secure cloud infrastructure. We
-                            implement industry-standard security measures including SSL encryption, OAuth2.0
-                            authentication, role-based access controls, and regular security audits to ensure your
-                            financial data remains safe.</p>
+                        <p>100%. All data is encrypted, backed up, and protected using secure cloud infrastructure.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
     <!-- CTA Section -->
 <section class="section-padding" id="contact">
     <div class="container">
