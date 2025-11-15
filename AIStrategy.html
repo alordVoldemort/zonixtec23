@@ -8,6 +8,7 @@
     <meta name="description"
         content="Transform your business with Zonixtec's AI Strategy & Consulting services – from AI maturity assessment to ROI-driven implementation roadmaps, we help organizations unlock measurable growth.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./CSS/allDropdown.css">
     <link rel="icon" href="./Assets/WhatsApp Image 2025-10-15 at 15.47.06.jpeg" sizes="32x32" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -576,7 +577,6 @@
             color: var(--gray);
             transition: all 0.3s ease;
         }
-
         .tech-itemm {
             background: rgba(255, 255, 255, 0.05);
             padding: 12px 15px;
@@ -1074,7 +1074,34 @@
                 </a>
                 <div class="nav-links">
 
-                    <a href="aboutus.html">About Us</a>
+                     <a href="#" class="about-toggle">About Us</a>
+                     <!-- ABOUT DROPDOWN PANEL -->
+                    <div class="about-dropdown">
+                        <div><h2>About Us</h2></div>
+
+                        <div class="about-container">
+                            
+                            <div class="about-links">
+                                <div>
+                                    <a href="aboutus.html">About Zonixtec</a>
+                                    <a href="Why-Zonixtec.html">Why Zonixtec?</a>
+                                    <a href="#">Our Journey</a>
+                                </div>
+                                <div>
+                                    <a href="#">From CEO’s Desk</a>
+                                    <a href="#">Leadership</a>
+                                    <a href="#">Case Study</a>
+                                </div>
+                            </div>
+                    
+                            <span class="about-close">&times;</span>
+                    
+                            <div class="about-image">
+                                <img src="./Assets/ai-nuclear-energy-background-future-innovation-disruptive-technology 3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
 
                     <!-- Services Dropdown -->
                     <div class="dropdown">
@@ -1093,6 +1120,7 @@
                                 <a href="ui.html">UI/UX Design Services</a>
                                 <a href="CloudSolutions.html">Cloud Solutions</a>
                                 <a href="hrms-solutions.html">HRMS Solutions</a>
+                                 <a href="hrms-solutions.html">HRMS Solutions</a>
                             </div>
                         </div>
                     </div>
@@ -1432,6 +1460,7 @@
             <div class="tech-section">
                 <h2>Our Technology Stack</h2>
 
+
                 <div class="tech-grid">
                     <div class="tech-category">
                         <h3>AI & ML Platforms</h3>
@@ -1464,6 +1493,37 @@
                             <div class="tech-item">Databricks</div>
                             <div class="tech-item">Apache Kafka</div>
                         </div>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>AI & ML Platforms</h3>
+                    <div class="tech-items">
+                        <div class="tech-itemm">TensorFlow</div>
+                        <div class="tech-item">PyTorch</div>
+                        <div class="tech-item">Scikit-learn</div>
+                        <div class="tech-item">Keras</div>
+                        <div class="tech-item">Hugging Face</div>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Cloud AI Services</h3>
+                    <div class="tech-items">
+                        <div class="tech-itemm">AWS AI Services</div>
+                        <div class="tech-item">Azure Cognitive Services</div>
+                        <div class="tech-item">Google Cloud AI</div>
+                        <div class="tech-item">IBM Watson</div>
+                        <div class="tech-item">OpenAI API</div>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Data Engineering</h3>
+                    <div class="tech-items">
+                        <div class="tech-itemm">Apache Spark</div>
+                        <div class="tech-item">Hadoop</div>
+                        <div class="tech-item">Snowflake</div>
+                        <div class="tech-item">Databricks</div>
+                        <div class="tech-item">Apache Kafka</div>
                     </div>
 
                     <div class="tech-category">
@@ -1814,6 +1874,24 @@
                 }
             });
         });
+
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const wasActive = item.classList.contains('active');
+        
+        // Close all FAQ items first
+        document.querySelectorAll('.faq-item').forEach(faqItem => {
+            faqItem.classList.remove('active');
+        });
+        
+        // If the clicked item wasn't active, open it
+        if (!wasActive) {
+            item.classList.add('active');
+        }
+    });
+});
+
     </script>
 
     <script>
@@ -1841,6 +1919,7 @@
             });
 
             // FAQ Accordion - Only one open at a time
+
             document.querySelectorAll('.faq-question').forEach(question => {
                 question.addEventListener('click', () => {
                     const item = question.parentElement;
@@ -1857,6 +1936,23 @@
                     }
                 });
             });
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const wasActive = item.classList.contains('active');
+        
+        // Close all FAQ items first
+        document.querySelectorAll('.faq-item').forEach(faqItem => {
+            faqItem.classList.remove('active');
+        });
+        
+        // If the clicked item wasn't active, open it
+        if (!wasActive) {
+            item.classList.add('active');
+        }
+    });
+});
+
 
             // Show image placeholder if image fails to load
             const image = document.querySelector('.services-image img');
@@ -2062,7 +2158,11 @@
     <!-- Booking Modal Script -->
     <script src="./script/booking-modal.js"></script>
     <script src="./script/navbar.js"></script>
+<<<<<<< HEAD
     <script src="./script/30min-booking.js"></script>
+=======
+    <script src="./script/allabout.js"></script>
+>>>>>>> main
 
 
 </body>

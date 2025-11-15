@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERP Solutions | Zonixtec - Enterprise Resource Planning</title>
+
     <meta name="description"
         content="Optimize your business operations with Zonixtec's ERP solutions—integrating finance, inventory, HR, and operations into one unified platform for smarter, data-driven management.">
+
+    <link rel="stylesheet" href="./CSS/allDropdown.css">
+    <meta name="description" content="Optimize your business operations with Zonixtec's ERP solutions—integrating finance, inventory, HR, and operations into one unified platform for smarter, data-driven management.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="./Assets/WhatsApp Image 2025-10-15 at 15.47.06.jpeg" sizes="32x32" type="image/png">
     <link
@@ -525,7 +529,6 @@
             color: var(--gray);
             transition: all 0.3s ease;
         }
-
         .tech-itemm {
             background: rgba(255, 255, 255, 0.05);
             padding: 12px 15px;
@@ -1102,7 +1105,34 @@
                 </a>
                 <div class="nav-links">
 
-                    <a href="aboutus.html">About Us</a>
+                   <a href="#" class="about-toggle">About Us</a>
+                     <!-- ABOUT DROPDOWN PANEL -->
+                    <div class="about-dropdown">
+                        <div><h2>About Us</h2></div>
+
+                        <div class="about-container">
+                            
+                            <div class="about-links">
+                                <div>
+                                    <a href="aboutus.html">About Zonixtec</a>
+                                    <a href="Why-Zonixtec.html">Why Zonixtec?</a>
+                                    <a href="#">Our Journey</a>
+                                </div>
+                                <div>
+                                    <a href="#">From CEO’s Desk</a>
+                                    <a href="#">Leadership</a>
+                                    <a href="#">Case Study</a>
+                                </div>
+                            </div>
+                    
+                            <span class="about-close">&times;</span>
+                    
+                            <div class="about-image">
+                                <img src="./Assets/ai-nuclear-energy-background-future-innovation-disruptive-technology 3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
 
                     <!-- Services Dropdown -->
                     <div class="dropdown">
@@ -1152,6 +1182,8 @@
                         your business together—from finance and supply chain to HR and production. Our ERP systems
                         eliminate silos, enhance collaboration, and deliver real-time insights—helping organizations
                         make faster, smarter decisions while improving overall efficiency.</p>
+
+                    <p class="hero-description">At Zonixtec, we design powerful ERP solutions that bring every part of your business together—from finance and supply chain to HR and production. Our ERP systems eliminate silos, enhance collaboration, and deliver real-time insights—helping organizations make faster, smarter decisions while improving overall efficiency.</p>
                     <a href="booking.html?service=erp-solutions" class="cta-button">Start Your ERP Project</a>
                 </div>
 
@@ -1480,6 +1512,80 @@
                         </div>
                     </div>
                 </div>
+
+               <!-- Technology Stack -->
+<div class="tech-section">
+    <h2>Our Technology Stack</h2>
+    
+    <div class="tech-grid">
+        <div class="tech-category">
+            <h3>Frontend Technologies</h3>
+            <div class="tech-items">
+                <div class="tech-item">React</div>
+                <div class="tech-item">Angular</div>
+                <div class="tech-item">Vue.js</div>
+                <div class="tech-item">TypeScript</div>
+                <div class="tech-item">HTML5/CSS3</div>
+            </div>
+        </div>
+        
+        <div class="tech-category">
+            <h3>Backend Technologies</h3>
+            <div class="tech-items">
+                <div class="tech-item">Node.js</div>
+                <div class="tech-item">Python</div>
+                <div class="tech-item">Java</div>
+                <div class="tech-item">.NET</div>
+                <div class="tech-item">PHP</div>
+            </div>
+        </div>
+        
+        <div class="tech-category">
+            <h3>Databases</h3>
+            <div class="tech-items">
+                <div class="tech-itemm">PostgreSQL</div>
+                <div class="tech-item">MySQL</div>
+                <div class="tech-item">MongoDB</div>
+                <div class="tech-item">SQL Server</div>
+                <div class="tech-item">Oracle</div>
+            </div>
+        </div>
+        
+        <div class="tech-category">
+            <h3>ERP Platforms</h3>
+            <div class="tech-items">
+                <div class="tech-itemm">SAP</div>
+                <div class="tech-item">Oracle ERP</div>
+                <div class="tech-item">Microsoft Dynamics</div>
+                <div class="tech-item">Odoo</div>
+                <div class="tech-item">Custom Solutions</div>
+            </div>
+        </div>
+        
+        <div class="tech-category">
+            <h3>Cloud & Infrastructure</h3>
+            <div class="tech-items">
+                <div class="tech-item">AWS</div>
+                <div class="tech-item">Azure</div>
+                <div class="tech-item">Google Cloud</div>
+                <div class="tech-item">Docker</div>
+                <div class="tech-item">Kubernetes</div>
+            </div>
+        </div>
+        
+        <div class="tech-category">
+            <h3>Integration & APIs</h3>
+            <div class="tech-items">
+                <div class="tech-itemm">REST APIs</div>
+                <div class="tech-item">SOAP</div>
+                <div class="tech-item">GraphQL</div>
+                <div class="tech-item">Webhooks</div>
+                <div class="tech-item">EDI</div>
+            </div>
+        </div>
+    </div>
+</div>
+>>>>>>> main
 
                 <div class="impact-section">
                     <div class="impact-container">
@@ -1992,7 +2098,9 @@
     <!-- Booking Modal Script -->
     <script src="./script/booking-modal.js"></script>
     <script src="./script/navbar.js"></script>
+
     <script src="./script/30min-booking.js"></script>
+    <script src="./script/allabout.js"></script>
 
 </body>
 
