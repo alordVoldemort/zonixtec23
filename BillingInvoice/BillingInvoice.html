@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Billing & Invoice Software | Zonixtec - Automate Financial Operations</title>
+    <link rel="icon" href="../Assets/WhatsApp Image 2025-10-15 at 15.47.06.jpeg" sizes="32x32" type="image/png">
+    <meta name="description"
+        content="Simplify your financial operations with Zonixtec's Billing & Invoice Software—automating invoicing, payments, and reporting for faster transactions and better cash flow management.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../CSS/allDropdown.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="../CSS/30min-model.css">
+    <link rel="stylesheet" href="BillingInvoice.css">
+    <!-- Responsive Fixes CSS -->
+
+
+    <!-- Navbar CSS -->
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/booking-modal.css">
+</head>
+
+<body>
+    <!-- Header -->
+
+    <!-- Header -->
+<header id="header">
+    <div class="container">
+        <nav>
+            <a href="home.html" class="logo">
+                <img src="../Assets/Logo.svg" alt="Zonixtec Logo" style="height: 40px; width: auto;">
+            </a>
+            <div class="nav-links">
+
+                <!-- ABOUT DROPDOWN TRIGGER -->
+                <a href="#" class="about-toggle">About Us</a>
+                <!-- ABOUT DROPDOWN PANEL -->
+                <div class="about-dropdown">
+                    <div>
+                        <h2>About Us</h2>
+                    </div>
+
+                    <div class="about-container">
+
+                        <div class="about-links">
+                            <div>
+                                <a href="../About/aboutus.html">About Zonixtec</a>
+                                <a href="../WhyZonixtec/WhyZonixtec.html">Why Zonixtec?</a>
+                                <a href="../OurHistory/OurHistory.html">Our Journey</a>
+                            </div>
+                            <div>
+                                <a href="../CEODesk/CEODesk.html">From CEO's Desk</a>
+                                <a href="../Leadership/Leadership.html">Leadership</a>
+                                <a href="../CaseStudies/CaseStudies.html">Case Study</a>
+                            </div>
+                        </div>
+
+                        <span class="about-close">&times;</span>
+
+                        <div class="about-image">
+                            <img src="../Assets/ai-nuclear-energy-background-future-innovation-disruptive-technology 3.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="../Services/Services.html" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-scroll">
+                            <a href="../WebDesignDevelopment/WebDesignDevelopment.html">Web Design & Development</a>
+                            <a href="../WebAppDevelopment/WebAppDevelopment.html">Web App Development</a>
+                            <a href="../CustomSoftware/CustomSoftware.html">Custom Software Development</a>
+                            <a href="../CRMSolutions/CRMSolutions.html">Custom CRM Solutions</a>
+                            <a href="../ERPSolutions/ERPSolutions.html">Custom ERP Solutions</a>
+                            <a href="../BillingInvoice/BillingInvoice.html">Billing-Invoice Solutions</a>
+                            <a href="../AIStrategy/AIStrategy.html">AI Strategy & Consulting</a>
+                            <a href="../DigitalMarketing/DigitalMarketing.html">Digital Marketing Services</a>
+                            <a href="../MobileDevelopment/MobileDevelopment.html">Mobile App Development</a>
+                            <a href="../ui.html">UI/UX Design Services</a>
+                            <a href="../CloudSolutions/CloudSolutions.html">Cloud Solutions</a>
+                            <a href="../HRMSSolutions/HRMSSolutions.html">HRMS Solutions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="../Career/Career.html">Career</a>
+                <a href="../Contact/contact.html">Contact</a>
+                <a href="javascript:void(0);" class="cta-buttons" onclick="openBookingModal()">
+                    <i class="fas fa-phone-alt"></i> Book A 30 Min Call
+                </a>
+
+            </div>
+
+            <!-- BOOKING MODAL For Each Page -->
+
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<div class="mobile-menu-overlay" id="mobileOverlay"></div>
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="billing-hero section-padding">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Billing & <span>Invoice Software</span></h1>
+                    <p class="hero-description">Our solutions automate invoice creation, payment
+                        tracking, and financial reporting — reducing errors and saving valuable time.</p>
+                    <a href="#contact" class="cta-button">Let's Simplify Your Billing Process</a>
+                </div>
+                <div class="hero-visual">
+                    <div class="invoice-preview">
+                        <div class="invoice-status">PAID</div>
+                        <div class="invoice-header">
+                            <h3>INVOICE</h3>
+                            <p>#INV-2023-001</p>
+                        </div>
+                        <div class="invoice-body">
+                            <div class="invoice-row">
+                                <span>From:</span>
+                                <span>Zonixtec Solutions</span>
+                            </div>
+                            <div class="invoice-row">
+                                <span>To:</span>
+                                <span>Global Tech Inc.</span>
+                            </div>
+                            <div class="invoice-row">
+                                <span>Date:</span>
+                                <span>Oct 25, 2023</span>
+                            </div>
+                            <div class="invoice-row">
+                                <span>Due Date:</span>
+                                <span>Nov 25, 2023</span>
+                            </div>
+                            <div class="invoice-row">
+                                <span>Web Development</span>
+                                <span>$2,500.00</span>
+                            </div>
+                            <div class="invoice-row">
+                                <span>UI/UX Design</span>
+                                <span>$1,200.00</span>
+                            </div>
+                            <div class="invoice-row">
+                                <span>Consulting</span>
+                                <span>$800.00</span>
+                            </div>
+                            <div class="invoice-row invoice-total">
+                                <span>TOTAL:</span>
+                                <span>$4,500.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Our Billing & <span>Invoice Solutions</span></h2>
+            <p class="section-subtitle">Our billing and invoice systems are designed to handle complex financial
+                workflows with ease — no matter the scale of your business.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="feature-title">Invoice Management</h3>
+                    <p class="feature-description">Create, send, and track invoices automatically with branding and
+                        custom templates.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="feature-title">Payment Integration</h3>
+                    <p class="feature-description"> Accept secure payments through multiple gateways like Razorpay, Stripe, and PayPal.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Recurring Billing</h3>
+                    <p class="feature-description"> Automate subscription-based billing cycles with reminders and due alerts.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Expense Tracking</h3>
+                    <p class="feature-description">Record and categorize expenses for accurate financial reports.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="feature-title">Tax & Compliance Management</h3>
+                    <p class="feature-description">Ensure GST, VAT, and regional compliance in every transaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+     <section class="section-padding features-section">
+    <div class="container">
+            <div class="features-section">
+                <h2 class="section-title">Features of Our <span>Solutions</span></h2>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Intuitive UI/UX</h3>
+                            <p>Superior user experience designed to engage visitors and drive conversions.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>SEO-Optimized Structure</h3>
+                            <p>Built with search engine visibility in mind from the ground up.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Scalable Architecture</h3>
+                            <p>Future-proof solutions designed for long-term growth and expansion.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Fast-Loading Performance</h3>
+                            <p>Optimized for speed with mobile responsiveness as a core feature.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Secure Coding Practices</h3>
+                            <p>Robust security measures and data protection protocols implemented throughout.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Seamless Integration</h3>
+                            <p>Easy integration with APIs, CRMs, payment systems, and third-party services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+
+
+    <!-- Challenges Section -->
+    <section class="section-padding challenges-section">
+        <div class="container">
+            <div class="challenges-container">
+                <h2 class="challenges-title">Challenges Without a Smart Billing System</h2>
+                <div class="challenges-list">
+                    <div class="challenge-item">
+                        <div class="challenge-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <p class="challenge-text">Manual data entry leads to errors that can result in revenue loss and
+                            client dissatisfaction</p>
+                    </div>
+
+                    <div class="challenge-item">
+                        <div class="challenge-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <p class="challenge-text">Slow invoicing processes cause delays in payments and complicate
+                            financial reconciliations</p>
+                    </div>
+
+                    <div class="challenge-item">
+                        <div class="challenge-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <p class="challenge-text">Lack of real-time insights into cash flow and financial health hinders
+                            strategic decision-making</p>
+                    </div>
+
+                    <div class="challenge-item">
+                        <div class="challenge-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <p class="challenge-text">Difficulty in maintaining accurate tax records and compliance
+                            reporting increases audit risks</p>
+                    </div>
+
+                    <div class="challenge-item">
+                        <div class="challenge-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <p class="challenge-text">Manual handling of subscription payments leads to inefficiencies and
+                            potential revenue leakage</p>
+                    </div>
+
+                    <div class="challenge-item">
+                        <div class="challenge-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <p class="challenge-text">Inadequate reporting capabilities make it difficult to analyze
+                            business performance and trends</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="advantage-section">
+                <h2 class="section-title">What We <span>Bring</span></h2>
+                <p class="section-subtitle">We go beyond just billing—we build intelligent financial ecosystems that optimize your revenue flow.</p>
+
+                <div class="advantage-content">
+                    <ul class="advantage-list">
+                        <li><i class="fas fa-check"></i> Tailor-made invoicing modules for your business model</li>
+                        <li><i class="fas fa-check"></i> Cloud-based system accessible from any device</li>
+                        <li><i class="fas fa-check"></i> Integration with your existing ERP or CRM tools</li>
+                        <li><i class="fas fa-check"></i> Real-time analytics for cash flow tracking</li>
+                        <li><i class="fas fa-check"></i> Secure and compliant payment architecture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Process Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="process-section">
+                <h2 class="section-title">Our Development <span>Process</span></h2>
+                <p class="section-subtitle">A systematic approach to building your perfect billing and invoice solution</p>
+
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3 class="step-title">Requirement Analysis</h3>
+                <p class="step-description">Understand your billing workflow, payment structure, and compliance needs
+                </p>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3 class="step-title">System Design</h3>
+                <p class="step-description">Build UI/UX wireframes and data architecture for ease of use</p>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3 class="step-title">Development</h3>
+                <p class="step-description">Code and connect payment gateways, databases, and modules</p>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <h3 class="step-title">Testing & Validation</h3>
+                <p class="step-description">Verify accuracy in transactions and security compliance</p>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">5</div>
+                <h3 class="step-title">Deployment</h3>
+                <p class="step-description">Launch on cloud with minimal business disruption</p>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">6</div>
+                <h3 class="step-title">Support & Updates</h3>
+                <p class="step-description">Provide ongoing maintenance and feature enhancements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="tech-section">
+                <h2>Our Technology Stack</h2>
+                <p class="section-subtitle">We leverage cutting-edge technologies to build secure, scalable, and
+                    efficient billing solutions</p>
+
+                <div class="tech-grid">
+                    <div class="tech-category">
+                        <h3>Frontend Technologies</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">React</div>
+                            <div class="tech-item">Angular</div>
+                            <div class="tech-item">TypeScript</div>
+                            <div class="tech-item">JavaScript</div>
+                            <div class="tech-item">HTML5/CSS3</div>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <h3>Backend Technologies</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">Node.js</div>
+                            <div class="tech-item">Python</div>
+                            <div class="tech-item">Laravel</div>
+                            <div class="tech-item">.NET</div>
+                            <div class="tech-item">Java</div>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <h3>Databases</h3>
+                        <div class="tech-items">
+                            <div class="tech-itemm">PostgreSQL</div>
+                            <div class="tech-item">MySQL</div>
+                            <div class="tech-item">MongoDB</div>
+                            <div class="tech-item">Redis</div>
+                            <div class="tech-item">SQL Server</div>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <h3>Payment Gateways</h3>
+                        <div class="tech-items">
+                            <div class="tech-itemm">Stripe</div>
+                            <div class="tech-item">Razorpay</div>
+                            <div class="tech-item">PayPal</div>
+                            <div class="tech-item">Square</div>
+                            <div class="tech-item">Authorize.net</div>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <h3>Security & Compliance</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">SSL Encryption</div>
+                            <div class="tech-item">OAuth2.0</div>
+                            <div class="tech-item">JWT Tokens</div>
+                            <div class="tech-item">PCI DSS</div>
+                            <div class="tech-item">GDPR Compliance</div>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <h3>Cloud & Deployment</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">AWS</div>
+                            <div class="tech-item">Azure</div>
+                            <div class="tech-item">Google Cloud</div>
+                            <div class="tech-item">Docker</div>
+                            <div class="tech-item">Kubernetes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Business <span>Impact</span></h2>
+            <p class="section-subtitle">How our billing and invoice software drives tangible results for your business
+            </p>
+
+            <div class="benefits-section">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="benefit-title">Faster Invoicing</h3>
+                    <p class="benefit-description">Automated invoice creation and delivery reduces processing time from
+                        days to minutes.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="benefit-title">Real-Time Visibility</h3>
+                    <p class="benefit-description">Gain instant insights into revenue, expenses, and cash flow with
+                        comprehensive dashboards.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                    </div>
+                    <h3 class="benefit-title">Improved Cash Flow</h3>
+                    <p class="benefit-description">Reduce payment delays with automated reminders and multiple payment
+                        options.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="benefit-title">Simplified Compliance</h3>
+                    <p class="benefit-description">Automated tax calculations and reporting ensure compliance with GST
+                        and other regulations.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="benefit-title">Enhanced Security</h3>
+                    <p class="benefit-description">Enterprise-grade security with encryption and role-based access
+                        controls.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="benefit-title">Customer Trust</h3>
+                    <p class="benefit-description">Professional invoices and transparent transactions build customer
+                        confidence and loyalty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding faq-section">
+        <div class="container">
+            <h2 class="section-title">Billing & Invoice <span>FAQs</span></h2>
+            <p class="section-subtitle">Find answers to common questions about our billing and invoice solutions</p>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What businesses need a billing and invoicing system?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Any business—retail, SaaS, healthcare, or manufacturing—that manages regular transactions and clients benefits from it.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can the system handle GST and other tax rules?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. Our software is fully compliant with GST and other local tax regulations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is it suitable for recurring payments or subscriptions?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We support automated recurring billing and invoicing for subscription models.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I integrate the system with my accounting software?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we can integrate with tools like QuickBooks, Zoho Books, and Tally.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is data stored securely?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>100%. All data is encrypted, backed up, and protected using secure cloud infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding" id="contact">
+        <div class="container">
+            <div class="cta-section">
+                <h2 class="cta-title">Ready to Simplify Your Billing Process?</h2>
+                <p class="cta-subtitle">Let's build a billing and invoice solution that automates your financial
+                    operations, reduces errors, and improves cash flow. Contact us for a free consultation and discover
+                    how our expertise can transform your billing processes.</p>
+                <a href="../Contact/contact.html" class="cta-button-large" style="cursor: pointer;">Schedule a Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-container">
+            <!-- Solutions Section with Dropdowns -->
+            <div class="footer-col">
+                <h3>Solutions</h3>
+                <div class="footer-links">
+                    <!-- AI Services Dropdown -->
+                    <div class="footer-dropdown">
+                        <div class="footer-dropdown-header">
+                            <a href="../AIServices/AIServices.html"><i class="fas fa-chevron-right"></i> AI Services</a>
+                            <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="footer-dropdown-content">
+                            <a href="../AIStrategy/AIStrategy.html"><i class="fas fa-chevron-right"></i> AI Strategy & Consulting</a>
+                            <a href="../MachineLearning/MachineLearning.html"><i class="fas fa-chevron-right"></i> Machine Learning</a>
+                            <a href="../NLP/NLP.html"><i class="fas fa-chevron-right"></i> Natural Language Processing</a>
+                            <a href="../ComputerVision/ComputerVision.html"><i class="fas fa-chevron-right"></i> Computer Vision</a>
+                            <a href="../PredictiveAnalytics/PredictiveAnalytics.html"><i class="fas fa-chevron-right"></i> Predictive Analysis</a>
+                            <a href="../ProcessAutomation/ProcessAutomation.html"><i class="fas fa-chevron-right"></i> Process Automation</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Core Development Dropdown -->
+                    <div class="footer-dropdown">
+                        <div class="footer-dropdown-header">
+                            <span><i class="fas fa-chevron-right"></i> Core Development</span>
+                            <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="footer-dropdown-content">
+                            <a href="../CustomSoftware/CustomSoftware.html"><i class="fas fa-chevron-right"></i> Custom Software Development</a>
+                            <a href="../MobileDevelopment/MobileDevelopment.html"><i class="fas fa-chevron-right"></i> Mobile App Development</a>
+                            <a href="../CloudSolutions/CloudSolutions.html"><i class="fas fa-chevron-right"></i> Cloud Solutions</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Design & Experience Dropdown -->
+                    <div class="footer-dropdown">
+                        <div class="footer-dropdown-header">
+                            <span><i class="fas fa-chevron-right"></i> Design & Experience</span>
+                            <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="footer-dropdown-content">
+                            <a href="../ui.html"><i class="fas fa-chevron-right"></i> UI/UX Design</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insights Section -->
+            <div class="footer-col">
+                <h3>Insights</h3>
+                <div class="footer-links">
+                    <a href="../CaseStudies/CaseStudies.html"><i class="fas fa-chevron-right"></i> Case Studies</a>
+                    <a href="../Blogs/Blogs.html"><i class="fas fa-chevron-right"></i> Blogs</a>
+                    <a href="../CEODesk/CEODesk.html"><i class="fas fa-chevron-right"></i> From CEO's Desk</a>
+                    <a href="../FAQs/FAQs.html"><i class="fas fa-chevron-right"></i> FAQs</a>
+                    <a href="../Guides/Guides.html"><i class="fas fa-chevron-right"></i> Guides</a>
+                    <a href="../HowTos/HowTos.html"><i class="fas fa-chevron-right"></i> How-tos</a>
+                </div>
+            </div>
+
+            <!-- Company Section -->
+            <div class="footer-col">
+                <h3>Company</h3>
+                <div class="footer-links">
+                    <a href="../About/aboutus.html"><i class="fas fa-chevron-right"></i> About Us</a>
+                    <a href="../About/aboutus.html"><i class="fas fa-chevron-right"></i> Our Story</a>
+                    <a href="../About/aboutus.html" id="aboutLink"><i class="fas fa-chevron-right"></i> Mission & Vision</a>
+                    <a href="../About/aboutus.html" id="OurJou"><i class="fas fa-chevron-right"></i> Our Journey</a>
+                    <a href="../About/aboutus.html" id="OurCore"><i class="fas fa-chevron-right"></i> Core Values</a>
+                    <a href="../Career/Career.html"><i class="fas fa-chevron-right"></i> Careers</a>
+                    <a href="../Leadership/Leadership.html"><i class="fas fa-chevron-right"></i> Leadership</a>
+                </div>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="../Home/home.html"><i class="fas fa-chevron-right"></i> Home</a>
+                    <a href="../Testimonials/Testimonials.html"><i class="fas fa-chevron-right"></i> Testimonials</a>
+                    <a href="../Career/Career.html"><i class="fas fa-chevron-right"></i> Careers</a>
+                    <a href="../Contact/contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter to receive updates on our latest services, technology insights, and industry trends.</p>
+                <div class="form-group" id="newsletter-group">
+                    <input type="email" class="form-control" id="newsletter-email" placeholder="Your Email" required>
+                    <button class="submit-btn" id="newsletter-btn" type="button">Subscribe</button>
+                </div>
+                <div id="newsletter-thankyou" style="display:none; color: #27ae60; margin-top:10px;">
+                    Thank you for subscribing!
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Zonixtec Software Solutions. All Rights Reserved. | Designed with ❤️ by Zonixtec Team</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <link rel="stylesheet" href="BillingInvoice.css">
+
+    <script>
+        // Mobile menu toggle function
+        // Mobile menu functionality
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        }
+
+        // Make function globally available
+        window.toggleMobileMenu = toggleMobileMenu;
+
+        // Close mobile menu when clicking on links
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    const navLinksContainer = document.querySelector('.nav-links');
+                    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+
+                    if (navLinksContainer.classList.contains('active')) {
+                        navLinksContainer.classList.remove('active');
+                        mobileMenuBtn.classList.remove('active');
+                    }
+                });
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function (event) {
+                const navLinks = document.querySelector('.nav-links');
+                const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+                const isClickInsideNav = navLinks.contains(event.target);
+                const isClickOnMenuBtn = mobileMenuBtn.contains(event.target);
+
+                if (!isClickInsideNav && !isClickOnMenuBtn && navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
+                }
+            });
+        });
+        // Make function globally available
+        window.toggleMobileMenu = toggleMobileMenu;
+
+        // Close mobile menu when clicking on links
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    const navLinksContainer = document.querySelector('.nav-links');
+                    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+
+                    if (navLinksContainer.classList.contains('active')) {
+                        navLinksContainer.classList.remove('active');
+                        mobileMenuBtn.classList.remove('active');
+                    }
+                });
+            });
+        });
+        // Footer dropdown functionality
+        document.querySelectorAll('.footer-dropdown-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const parent = header.parentElement;
+                parent.classList.toggle('open');
+            });
+        });
+
+        // FAQ Accordion Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+
+                    // Close all FAQ items first
+                    faqItems.forEach(faqItem => {
+                        faqItem.classList.remove('active');
+                    });
+
+                    // If the clicked item wasn't active, open it
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script src="Customscroll.js"></script>
+
+    <!-- Chatbot -->
+    <link rel="stylesheet" href="../CSS/chatbot.css">
+    <script src="../script/chatbot.js"></script>
+
+
+ <!--open booking 30 min call modal -->
+
+    <div id="bookingModal" class="booking-modal">
+        <div class="booking-modal-content">
+
+            <!-- CLOSE BUTTON -->
+            <span class="booking-modal-close" onclick="closeBookingModal()">&times;</span>
+
+            <!-- STEP PROGRESS -->
+            <div class="booking-progress-indicator">
+                <div class="booking-progress-step booking-active" id="progress1" data-step="1"></div>
+                <div class="booking-progress-line" id="line1"></div>
+                <div class="booking-progress-step" id="progress2" data-step="2"></div>
+                <div class="booking-progress-line" id="line2"></div>
+                <div class="booking-progress-step" id="progress3" data-step="3"></div>
+                <div class="booking-progress-line" id="line3"></div>
+                <div class="booking-progress-step" id="progress4" data-step="4"></div>
+            </div>
+
+            <!-- STEP 1 -->
+            <div class="booking-modal-step booking-active" id="step1">
+                <div class="booking-step-header">
+                    <div class="booking-step-number">1</div>
+                    <h2 class="booking-step-title">Zonixtec — 30-Minute Discovery Call</h2>
+                </div>
+
+                <div class="booking-discovery-subtitle">
+                    Duration: 30 Minutes | Mode: Web Conference
+                </div>
+
+                <div class="booking-session-overview">
+                    <h4 class="booking-session-title">In this quick session, we'll cover:</h4>
+                    <div class="booking-session-items-grid">
+                        <div class="booking-session-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Introduction & Requirement Understanding</span>
+                        </div>
+                        <div class="booking-session-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Relevant Use Case Demo</span>
+                        </div>
+                        <div class="booking-session-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Technology Solutions & Offerings</span>
+                        </div>
+                        <div class="booking-session-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Project Roadmap & Next Steps</span>
+                        </div>
+                    </div>
+
+                    <div class="booking-discovery-goal">
+                        <strong>Goal:</strong>
+                        <p>Understand your needs and explore how Zonixtec can deliver the right tech solutions for your
+                            project.</p>
+                    </div>
+                </div>
+
+                <div class="booking-step-navigation">
+                    <div></div>
+                    <button class="booking-btn-primary" onclick="nextStep(1)">
+                        Next: Select Date <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="booking-modal-step" id="step2">
+                <div class="booking-step-header">
+                    <div class="booking-step-number">2</div>
+                    <h2 class="booking-step-title">Select Your Preferred Date</h2>
+                </div>
+
+                <input type="text" id="dateInput" class="booking-calendar-input" placeholder="Pick a date" readonly />
+
+                <div class="booking-step-navigation">
+                    <button class="booking-btn-secondary" onclick="previousStep(2)">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button class="booking-btn-primary" id="dateNextBtn" onclick="nextStep(2)" disabled>
+                        Next: Select Time <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="booking-modal-step" id="step3">
+                <div class="booking-step-header">
+                    <div class="booking-step-number">3</div>
+                    <h2 class="booking-step-title">Choose Your Time Slot</h2>
+                </div>
+
+                <div class="booking-time-slots">
+                    <div class="booking-time-slot" data-time="10:30">10:30 AM</div>
+                    <div class="booking-time-slot" data-time="11:30">11:30 AM</div>
+                    <div class="booking-time-slot" data-time="12:00">12:00 PM</div>
+                    <div class="booking-time-slot" data-time="12:30">12:30 PM</div>
+                    <div class="booking-time-slot" data-time="13:00">1:00 PM</div>
+                    <div class="booking-time-slot" data-time="13:30">1:30 PM</div>
+                    <div class="booking-time-slot" data-time="14:00">2:00 PM</div>
+                    <div class="booking-time-slot" data-time="14:30">2:30 PM</div>
+                    <div class="booking-time-slot" data-time="15:00">3:00 PM</div>
+                    <div class="booking-time-slot" data-time="15:30">3:30 PM</div>
+                    <div class="booking-time-slot" data-time="16:00">4:00 PM</div>
+                    <div class="booking-time-slot" data-time="16:30">4:30 PM</div>
+                    <div class="booking-time-slot" data-time="17:00">5:00 PM</div>
+                </div>
+
+                <div class="booking-step-navigation">
+                    <button class="booking-btn-secondary" onclick="previousStep(3)">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button class="booking-btn-primary" id="timeNextBtn" onclick="nextStep(3)" disabled>
+                        Next: Your Info <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="booking-modal-step" id="step4">
+                <div class="booking-step-header">
+                    <div class="booking-step-number">4</div>
+                    <h2 class="booking-step-title">Your Information</h2>
+                </div>
+
+                <form class="booking-modal-form" id="bookingFormPage">
+
+                    <div class="form-group-row">
+                        <label for="bookingName">Full Name</label>
+                        <input type="text" id="bookingName" placeholder="Enter your full name" required />
+                    </div>
+                    <span class="error-text" id="nameError"></span>
+
+                    <div class="form-group-row">
+                        <label for="bookingEmail">Email</label>
+                        <input type="email" id="bookingEmail" placeholder="Enter your email" required />
+                    </div>
+                    <span class="error-text" id="emailError"></span>
+
+                    <div class="form-group-row">
+                        <label for="bookingPhone">Phone</label>
+                        <input type="tel" id="bookingPhone" placeholder="Enter your phone number" required />
+                    </div>
+                    <span class="error-text" id="phoneError"></span>
+
+                    <div class="form-group-row">
+                        <label for="bookingCompany">Company</label>
+                        <input type="text" id="bookingCompany" placeholder="Company (optional)" />
+                    </div>
+
+                    <div class="form-group-row">
+                        <label for="bookingMessage">Message</label>
+                        <textarea id="bookingMessage" placeholder="Describe what services you need..."></textarea>
+                    </div>
+
+                    <div class="booking-step-navigation">
+                        <button type="button" class="booking-btn-secondary" onclick="previousStep(4)">
+                            <i class="fas fa-arrow-left"></i> Back
+                        </button>
+
+                        <button type="submit" class="booking-btn-primary">
+                            <i class="fas fa-calendar-check"></i> Book My Free Consultation
+                        </button>
+                    </div>
+
+                </form>
+
+
+
+            </div>
+
+            <!-- SUCCESS -->
+            <div id="bookingSuccessPage" class="booking-success-message">
+                <i class="fas fa-check-circle"></i>
+                <h3>Your Call is Booked!</h3>
+                <p>Our team will contact you shortly. Thank you!</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Booking Modal Script -->
+    <script src="../script/booking-modal.js"></script>
+    <script src="../script/allabout.js"></script>
+    <script src="../script/navbar.js"></script>
+    <script src="../script/footer.js"></script>
+
+    <script src="../script/30min-booking.js"></script>
+
+    
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+

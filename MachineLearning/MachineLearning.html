@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence & Machine Learning Development | Zonixtec</title>
+    <meta name="description"
+        content="Unlock business potential with Zonixtec's AI & ML solutions. From automation to predictive analytics, we help you streamline operations, enhance customer engagement, and accelerate growth.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../Assets/WhatsApp Image 2025-10-15 at 15.47.06.jpeg" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="../CSS/allDropdown.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="MachineLearning.css">
+    <!-- Responsive Fixes CSS -->
+
+
+    <!-- Navbar CSS -->
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/booking-modal.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- Header -->
+<header id="header">
+    <div class="container">
+        <nav>
+            <a href="home.html" class="logo">
+                <img src="../Assets/Logo.svg" alt="Zonixtec Logo" style="height: 40px; width: auto;">
+            </a>
+            <div class="nav-links">
+
+                <!-- ABOUT DROPDOWN TRIGGER -->
+                <a href="#" class="about-toggle">About Us</a>
+                <!-- ABOUT DROPDOWN PANEL -->
+                <div class="about-dropdown">
+                    <div>
+                        <h2>About Us</h2>
+                    </div>
+
+                    <div class="about-container">
+
+                        <div class="about-links">
+                            <div>
+                                <a href="../About/aboutus.html">About Zonixtec</a>
+                                <a href="../WhyZonixtec/WhyZonixtec.html">Why Zonixtec?</a>
+                                <a href="../OurHistory/OurHistory.html">Our Journey</a>
+                            </div>
+                            <div>
+                                <a href="../CEODesk/CEODesk.html">From CEO's Desk</a>
+                                <a href="../Leadership/Leadership.html">Leadership</a>
+                                <a href="../CaseStudies/CaseStudies.html">Case Study</a>
+                            </div>
+                        </div>
+
+                        <span class="about-close">&times;</span>
+
+                        <div class="about-image">
+                            <img src="../Assets/ai-nuclear-energy-background-future-innovation-disruptive-technology 3.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="../Services/Services.html" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-scroll">
+                            <a href="../WebDesignDevelopment/WebDesignDevelopment.html">Web Design & Development</a>
+                            <a href="../WebAppDevelopment/WebAppDevelopment.html">Web App Development</a>
+                            <a href="../CustomSoftware/CustomSoftware.html">Custom Software Development</a>
+                            <a href="../CRMSolutions/CRMSolutions.html">Custom CRM Solutions</a>
+                            <a href="../ERPSolutions/ERPSolutions.html">Custom ERP Solutions</a>
+                            <a href="../BillingInvoice/BillingInvoice.html">Billing-Invoice Solutions</a>
+                            <a href="../AIStrategy/AIStrategy.html">AI Strategy & Consulting</a>
+                            <a href="../DigitalMarketing/DigitalMarketing.html">Digital Marketing Services</a>
+                            <a href="../MobileDevelopment/MobileDevelopment.html">Mobile App Development</a>
+                            <a href="../ui.html">UI/UX Design Services</a>
+                            <a href="../CloudSolutions/CloudSolutions.html">Cloud Solutions</a>
+                            <a href="../HRMSSolutions/HRMSSolutions.html">HRMS Solutions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="../Career/Career.html">Career</a>
+                <a href="../Contact/contact.html">Contact</a>
+                <a href="javascript:void(0);" class="cta-buttons" onclick="openBookingModal()">
+                    <i class="fas fa-phone-alt"></i> Book A 30 Min Call
+                </a>
+
+            </div>
+
+            <!-- BOOKING MODAL For Each Page -->
+
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<div class="mobile-menu-overlay" id="mobileOverlay"></div>
+
+
+
+
+
+    <main>
+        <section class="ai-section">
+            <div class="ai-pattern"></div>
+            <div class="container">
+                <div class="ai-hero">
+                    <h1 class="hero-title">Artificial Intelligence & Machine Learning</h1>
+                    <h2 class="hero-subtitle">Unlock Business Potential with Intelligent Solutions</h2>
+                    <p class="hero-description">Artificial Intelligence (AI) and Machine Learning (ML) are no longer
+                        future technologies—they are transforming businesses today. From predictive decision-making to
+                        smart automation, AI/ML helps organizations stay competitive, agile, and customer-centric. At
+                        Zonixtec, we design AI & ML solutions that deliver measurable impact tailored to your business
+                        goals.</p>
+                    <a href="booking.html?service=ai-services" class="cta-button">Start Your AI Journey Today</a>
+                </div>
+
+                <!-- Service Types Section -->
+                <div class="service-types">
+                    <h2 class="section-title">Our AI & ML Solutions</h2>
+                    <div class="service-types-grid">
+                        <div class="service-type-card">
+                            <div class="service-type-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="service-type-title">Predictive Analytics</h3>
+                            <p class="service-type-text">Forecast demand, risks, and opportunities with advanced
+                                predictive modeling.</p>
+                        </div>
+
+                        <div class="service-type-card">
+                            <div class="service-type-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3 class="service-type-title">Natural Language Processing</h3>
+                            <p class="service-type-text">Build chatbots, sentiment analysis, and language translation
+                                tools.</p>
+                        </div>
+
+                        <div class="service-type-card">
+                            <div class="service-type-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3 class="service-type-title">Computer Vision</h3>
+                            <p class="service-type-text">Enable image recognition, object detection, and quality
+                                inspection.</p>
+                        </div>
+
+                        <div class="service-type-card">
+                            <div class="service-type-icon">
+                                <i class="fas fa-user-cog"></i>
+                            </div>
+                            <h3 class="service-type-title">Recommendation Engines</h3>
+                            <p class="service-type-text">Deliver personalized customer experiences with intelligent
+                                recommendations.</p>
+                        </div>
+
+                        <div class="service-type-card">
+                            <div class="service-type-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3 class="service-type-title">Robotic Process Automation</h3>
+                            <p class="service-type-text">Automate repetitive business workflows with intelligent
+                                automation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="features-section">
+                    <h2 class="section-title">Key Features of AI & ML Solutions</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3 class="feature-title">Intelligent Automation</h3>
+                            <p class="feature-text">Automate workflows with smart AI systems that learn and adapt over
+                                time.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="feature-title">Real-time Insights</h3>
+                            <p class="feature-text">Process data and deliver actionable insights in real-time for faster
+                                decision-making.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </div>
+                            <h3 class="feature-title">Scalable Algorithms</h3>
+                            <p class="feature-text">Future-ready algorithms that scale with your business growth and
+                                data volume.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <h3 class="feature-title">Personalized Experiences</h3>
+                            <p class="feature-text">Deliver tailored recommendations and predictions for enhanced
+                                customer engagement.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3 class="feature-title">Predictive Modeling</h3>
+                            <p class="feature-text">Enhanced decision-making with advanced predictive modeling
+                                techniques.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="feature-title">Secure Solutions</h3>
+                            <p class="feature-text">Secure and adaptive solutions built on modern AI frameworks with
+                                enterprise-grade security.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenges Section -->
+                <!-- Challenges Section -->
+                <div class="challenges-section">
+                    <div class="challenges-container">
+                        <h2 class="challenges-title">Challenges Without AI & ML</h2>
+                        <div class="challenges-list">
+                            <div class="challenge-item">
+                                <div class="challenge-icon">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                </div>
+                                <p class="challenge-text">Missed opportunities due to manual decision-making</p>
+                            </div>
+                            <div class="challenge-item">
+                                <div class="challenge-icon">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                </div>
+                                <p class="challenge-text">Inability to analyze big data effectively</p>
+                            </div>
+                            <div class="challenge-item">
+                                <div class="challenge-icon">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                </div>
+                                <p class="challenge-text">Poor customer experience without personalization</p>
+                            </div>
+                            <div class="challenge-item">
+                                <div class="challenge-icon">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                </div>
+                                <p class="challenge-text">Higher operational costs from repetitive manual tasks</p>
+                            </div>
+                            <div class="challenge-item">
+                                <div class="challenge-icon">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                </div>
+                                <p class="challenge-text">Delays in innovation and competitiveness</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What We Bring Section -->
+                <div class="what-we-bring">
+                    <div class="what-we-bring-container">
+                        <h2 class="what-we-bring-title">What We Bring for You</h2>
+                        <div class="what-we-bring-list">
+                            <div class="what-we-bring-item">
+                                <div class="what-we-bring-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="what-we-bring-text">Domain expertise across multiple industries</p>
+                            </div>
+                            <div class="what-we-bring-item">
+                                <div class="what-we-bring-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="what-we-bring-text">Data-driven strategies for measurable outcomes</p>
+                            </div>
+                            <div class="what-we-bring-item">
+                                <div class="what-we-bring-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="what-we-bring-text">Advanced AI models that solve real-world problems</p>
+                            </div>
+                            <div class="what-we-bring-item">
+                                <div class="what-we-bring-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="what-we-bring-text">Business outcomes like efficiency and revenue growth</p>
+                            </div>
+                            <div class="what-we-bring-item">
+                                <div class="what-we-bring-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="what-we-bring-text">Enhanced customer satisfaction and loyalty</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Process Section -->
+                <div class="process-container">
+                    <h2 class="process-title">Our Development Process</h2>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <h3 class="step-title">Requirement Analysis</h3>
+                            <p class="step-description">Understanding your business challenges & goals.</p>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <h3 class="step-title">Data Collection & Preparation</h3>
+                            <p class="step-description">Gathering and structuring data for model training.</p>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <h3 class="step-title">Model Development</h3>
+                            <p class="step-description">Designing and training AI/ML models with state-of-the-art
+                                techniques.</p>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <h3 class="step-title">Integration & Deployment</h3>
+                            <p class="step-description">Seamlessly embedding AI into your systems and workflows.</p>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-number">5</div>
+                            <h3 class="step-title">Testing & Optimization</h3>
+                            <p class="step-description">Ensuring accuracy, reliability, and scalability of AI solutions.
+                            </p>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-number">6</div>
+                            <h3 class="step-title">Ongoing Support</h3>
+                            <p class="step-description">Continuous improvements, monitoring, and model updates.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Section -->
+                <div class="tech-stack">
+                    <h2 class="tech-title">Our Technology Stack</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="tech-name">Python</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="tech-name">R</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <div class="tech-name">Java</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="tech-name">TensorFlow</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="tech-name">PyTorch</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <div class="tech-name">Keras</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="tech-name">Scikit-learn</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <div class="tech-name">AWS AI/ML</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            <div class="tech-name">Azure ML</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fab fa-google"></i>
+                            </div>
+                            <div class="tech-name">Google AI</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="tech-name">MongoDB</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="tech-name">PostgreSQL</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact Section -->
+                <div class="impact-section">
+                    <div class="impact-container">
+                        <h2 class="impact-title">Impact of AI & ML on Your Business</h2>
+                        <div class="impact-list">
+                            <div class="impact-item">
+                                <div class="impact-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <p class="impact-text"><strong>40% faster</strong> decision-making with predictive
+                                    analytics</p>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <p class="impact-text"><strong>30% reduction</strong> in operational costs via
+                                    automation</p>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <p class="impact-text"><strong>Enhanced customer loyalty</strong> with personalized
+                                    recommendations</p>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <p class="impact-text"><strong>Improved product quality</strong> through computer vision
+                                    & predictive maintenance</p>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <p class="impact-text"><strong>Competitive edge</strong> by embracing future-ready
+                                    technology</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="cta-container">
+                    <h2 class="cta-title">Ready to Transform with AI?</h2>
+                    <p class="cta-description">Discover how our AI and machine learning solutions can revolutionize your
+                        business operations, enhance decision-making, and create new revenue streams. Schedule a
+                        consultation with our AI experts today.</p>
+                    <a href="booking.html?service=ai-services" class="cta-button-large">Schedule AI Consultation</a>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h2 class="faq-title">AI & ML Frequently Asked Questions</h2>
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                What industries benefit the most from AI & ML?
+                                <span class="fas fa-chevron-down faq-toggle"></span>
+                            </div>
+                            <p class="faq-answer">AI & ML are used across industries like finance, healthcare, retail,
+                                manufacturing, and logistics to automate processes, forecast trends, and improve
+                                customer experience.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                How long does it take to build an AI/ML solution?
+                                <span class="fas fa-chevron-down faq-toggle"></span>
+                            </div>
+                            <p class="faq-answer">The timeline depends on the project's complexity, typically ranging
+                                from 6 weeks to 6 months.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Do I need large amounts of data to start?
+                                <span class="fas fa-chevron-down faq-toggle"></span>
+                            </div>
+                            <p class="faq-answer">Not always. We can work with existing datasets and scale as your
+                                business grows.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Can AI integrate with my existing systems?
+                                <span class="fas fa-chevron-down faq-toggle"></span>
+                            </div>
+                            <p class="faq-answer">Yes, our AI solutions are custom-built for seamless integration with
+                                your ERP, CRM, or other software systems.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Is AI secure for business data?
+                                <span class="fas fa-chevron-down faq-toggle"></span>
+                            </div>
+                            <p class="faq-answer">Absolutely. We follow enterprise-grade data security protocols to
+                                ensure your sensitive information remains safe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-container">
+            <!-- Solutions Section with Dropdowns -->
+            <div class="footer-col">
+                <h3>Solutions</h3>
+                <div class="footer-links">
+                    <!-- AI Services Dropdown -->
+                    <div class="footer-dropdown">
+                        <div class="footer-dropdown-header">
+                            <a href="../AIServices/AIServices.html"><i class="fas fa-chevron-right"></i> AI Services</a>
+                            <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="footer-dropdown-content">
+                            <a href="../AIStrategy/AIStrategy.html"><i class="fas fa-chevron-right"></i> AI Strategy & Consulting</a>
+                            <a href="../MachineLearning/MachineLearning.html"><i class="fas fa-chevron-right"></i> Machine Learning</a>
+                            <a href="../NLP/NLP.html"><i class="fas fa-chevron-right"></i> Natural Language Processing</a>
+                            <a href="../ComputerVision/ComputerVision.html"><i class="fas fa-chevron-right"></i> Computer Vision</a>
+                            <a href="../PredictiveAnalytics/PredictiveAnalytics.html"><i class="fas fa-chevron-right"></i> Predictive Analysis</a>
+                            <a href="../ProcessAutomation/ProcessAutomation.html"><i class="fas fa-chevron-right"></i> Process Automation</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Core Development Dropdown -->
+                    <div class="footer-dropdown">
+                        <div class="footer-dropdown-header">
+                            <span><i class="fas fa-chevron-right"></i> Core Development</span>
+                            <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="footer-dropdown-content">
+                            <a href="../CustomSoftware/CustomSoftware.html"><i class="fas fa-chevron-right"></i> Custom Software Development</a>
+                            <a href="../MobileDevelopment/MobileDevelopment.html"><i class="fas fa-chevron-right"></i> Mobile App Development</a>
+                            <a href="../CloudSolutions/CloudSolutions.html"><i class="fas fa-chevron-right"></i> Cloud Solutions</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Design & Experience Dropdown -->
+                    <div class="footer-dropdown">
+                        <div class="footer-dropdown-header">
+                            <span><i class="fas fa-chevron-right"></i> Design & Experience</span>
+                            <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="footer-dropdown-content">
+                            <a href="../ui.html"><i class="fas fa-chevron-right"></i> UI/UX Design</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insights Section -->
+            <div class="footer-col">
+                <h3>Insights</h3>
+                <div class="footer-links">
+                    <a href="../CaseStudies/CaseStudies.html"><i class="fas fa-chevron-right"></i> Case Studies</a>
+                    <a href="../Blogs/Blogs.html"><i class="fas fa-chevron-right"></i> Blogs</a>
+                    <a href="../CEODesk/CEODesk.html"><i class="fas fa-chevron-right"></i> From CEO's Desk</a>
+                    <a href="../FAQs/FAQs.html"><i class="fas fa-chevron-right"></i> FAQs</a>
+                    <a href="../Guides/Guides.html"><i class="fas fa-chevron-right"></i> Guides</a>
+                    <a href="../HowTos/HowTos.html"><i class="fas fa-chevron-right"></i> How-tos</a>
+                </div>
+            </div>
+
+            <!-- Company Section -->
+            <div class="footer-col">
+                <h3>Company</h3>
+                <div class="footer-links">
+                    <a href="../About/aboutus.html"><i class="fas fa-chevron-right"></i> About Us</a>
+                    <a href="../About/aboutus.html"><i class="fas fa-chevron-right"></i> Our Story</a>
+                    <a href="../About/aboutus.html" id="aboutLink"><i class="fas fa-chevron-right"></i> Mission & Vision</a>
+                    <a href="../About/aboutus.html" id="OurJou"><i class="fas fa-chevron-right"></i> Our Journey</a>
+                    <a href="../About/aboutus.html" id="OurCore"><i class="fas fa-chevron-right"></i> Core Values</a>
+                    <a href="../Career/Career.html"><i class="fas fa-chevron-right"></i> Careers</a>
+                    <a href="../Leadership/Leadership.html"><i class="fas fa-chevron-right"></i> Leadership</a>
+                </div>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="../Home/home.html"><i class="fas fa-chevron-right"></i> Home</a>
+                    <a href="../Testimonials/Testimonials.html"><i class="fas fa-chevron-right"></i> Testimonials</a>
+                    <a href="../Career/Career.html"><i class="fas fa-chevron-right"></i> Careers</a>
+                    <a href="../Contact/contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter to receive updates on our latest services, technology insights, and industry trends.</p>
+                <div class="form-group" id="newsletter-group">
+                    <input type="email" class="form-control" id="newsletter-email" placeholder="Your Email" required>
+                    <button class="submit-btn" id="newsletter-btn" type="button">Subscribe</button>
+                </div>
+                <div id="newsletter-thankyou" style="display:none; color: #27ae60; margin-top:10px;">
+                    Thank you for subscribing!
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Zonixtec Software Solutions. All Rights Reserved. | Designed with ❤️ by Zonixtec Team</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+    <link rel="stylesheet" href="MachineLearning.css">
+
+    <script>
+        document.querySelectorAll('.footer-dropdown-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const parent = header.parentElement;
+                parent.classList.toggle('open');
+            });
+        });
+    </script>
+
+    <script>
+        // Mobile menu toggle functionality
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        const menuIcon = mobileMenuBtn.querySelector('i');
+
+        mobileMenuBtn.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // FAQ toggle functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+
+                    // Close all FAQ items first
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                    });
+
+                    // Open clicked item if it wasn't active
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+
+            // Newsletter functionality
+            const btn = document.getElementById('newsletter-btn');
+            const emailInput = document.getElementById('newsletter-email');
+            const thankyou = document.getElementById('newsletter-thankyou');
+
+            btn.addEventListener('click', function () {
+                if (emailInput.value && /\S+@\S+\.\S+/.test(emailInput.value)) {
+                    thankyou.style.display = 'block';
+                    setTimeout(() => { thankyou.style.display = 'none'; }, 3000);
+                    emailInput.value = '';
+                } else {
+                    emailInput.focus();
+                    emailInput.style.borderColor = '#e74c3c';
+                    setTimeout(() => { emailInput.style.borderColor = ''; }, 1500);
+                }
+            });
+        });
+    </script>
+    <script src="Customscroll.js"></script>
+
+    <!-- Chatbot -->
+    <link rel="stylesheet" href="../CSS/chatbot.css">
+    <script src="../script/chatbot.js"></script>
+
+
+    <!-- Booking Modal -->
+<div class="modal" id="bookingModal">
+    <div class="modal-content">
+        <button class="close-modal" onclick="closeBookingModal()">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <div class="modal-header">
+            <h2>Book Your Free 30-Minute Consultation</h2>
+            <p>Let's discuss how we can help transform your business</p>
+        </div>
+
+        <form class="booking-form" id="bookingForm">
+            <div class="form-row">
+                <div class="form-group-modal">
+                    <label>Full Name <span>*</span></label>
+                    <input type="text" id="bookingName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group-modal">
+                    <label>Email Address <span>*</span></label>
+                    <input type="email" id="bookingEmail" placeholder="your@email.com" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group-modal">
+                    <label>Phone Number <span>*</span></label>
+                    <input type="tel" id="bookingPhone" placeholder="+91 999999999" required>
+                </div>
+                <div class="form-group-modal">
+                    <label>Company Name</label>
+                    <input type="text" id="bookingCompany" placeholder="Your company (optional)">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group-modal">
+                    <label>Preferred Date <span>*</span></label>
+                    <input type="date" id="bookingDate" required>
+                </div>
+                <div class="form-group-modal">
+                    <label>Preferred Time <span>*</span></label>
+                    <input type="time" id="bookingTime" required>
+                </div>
+            </div>
+
+            <div class="form-group-modal">
+                <label>Service Interested In <span>*</span></label>
+                <select id="bookingService" required>
+                    <option value="">Select a service</option>
+                    <option value="CRM Solutions">CRM Solutions</option>
+                    <option value="ERP Solutions">ERP Solutions</option>
+                    <option value="Billing Software">Billing Software</option>
+                    <option value="Website Development">Website Development</option>
+                    <option value="Mobile App Development">Mobile App Development</option>
+                    <option value="AI Solutions">AI Solutions</option>
+                    <option value="Cloud Solutions">Cloud Solutions</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group-modal">
+                <label>Message / Additional Details</label>
+                <textarea id="bookingMessage" placeholder="Tell us about your project or questions..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-booking-btn">
+                <i class="fas fa-calendar-check"></i> Book My Call
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- Success Message Overlay -->
+<div class="success-message" id="bookingSuccess">
+    <i class="fas fa-check-circle"></i> 
+    <strong>Your Call is Booked!</strong>
+    <p>Our team will connect with you as soon as possible. Thank you for choosing Zonixtec!</p>
+</div>
+
+
+    <!-- Booking Modal Script -->
+    <script src="../script/booking-modal.js"></script>
+    <script src="../script/navbar.js"></script>
+    <script src="../script/footer.js"></script>
+    <script src="../script/allabout.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+

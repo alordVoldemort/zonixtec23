@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking System Diagnostics - Zonixtec</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="DiagnosticBooking.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-stethoscope"></i> Booking System Diagnostics</h1>
+        <p class="subtitle">Test and debug the 30-minute call booking system</p>
+
+        <!-- Step 1: Database Table Check -->
+        <div class="test-section">
+            <h2><i class="fas fa-database"></i> Step 1: Database Table Check</h2>
+            <p>Check if the 'bookings' table exists in the database</p>
+            <button onclick="checkDatabaseTable()">
+                <i class="fas fa-search"></i> Check Database Table
+            </button>
+            <div id="db-result"></div>
+        </div>
+
+        <!-- Step 2: PHP Endpoint Test -->
+        <div class="test-section">
+            <h2><i class="fas fa-server"></i> Step 2: PHP Endpoint Test</h2>
+            <p>Test if save-booking.php is accessible and working</p>
+            <button onclick="testEndpoint()">
+                <i class="fas fa-plug"></i> Test Endpoint
+            </button>
+            <div id="endpoint-result"></div>
+        </div>
+
+        <!-- Step 3: Submit Test Booking -->
+        <div class="test-section">
+            <h2><i class="fas fa-paper-plane"></i> Step 3: Submit Test Booking</h2>
+            <p>Submit a test booking to verify the complete flow</p>
+            <button onclick="submitTestBooking()">
+                <i class="fas fa-flask"></i> Submit Test Booking
+            </button>
+            <div id="booking-result"></div>
+        </div>
+
+        <!-- Step 4: View Bookings -->
+        <div class="test-section">
+            <h2><i class="fas fa-list"></i> Step 4: View All Bookings</h2>
+            <p>Fetch and display all bookings from the database</p>
+            <button onclick="viewBookings()">
+                <i class="fas fa-eye"></i> View Bookings
+            </button>
+            <button onclick="window.location.href='Admin/bookings.html'" style="background: #28a745;">
+                <i class="fas fa-user-shield"></i> Open Admin Panel
+            </button>
+            <div id="view-result"></div>
+        </div>
+
+        <!-- Diagnostic Info -->
+        <div class="test-section">
+            <h2><i class="fas fa-info-circle"></i> System Information</h2>
+            <div class="result-box">
+                <strong>Current URL:</strong> <span id="current-url"></span><br>
+                <strong>Is Admin Folder:</strong> <span id="is-admin"></span><br>
+                <strong>API Path:</strong> <span id="api-path"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="DiagnosticBooking.js"></script>
+</body>
+</html>
+
+
+
+
+
