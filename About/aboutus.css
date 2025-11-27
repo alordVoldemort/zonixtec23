@@ -114,8 +114,7 @@
         header .nav-links a,
         header .cta-buttons,
         header .mobile-menu-btn {
-            opacity: 1 !important;
-            transform: none !important;
+            opacity: 1 !important;;
             animation: none !important;
         }
 

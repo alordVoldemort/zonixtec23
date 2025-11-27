@@ -42,8 +42,13 @@ if (!empty($missing)) {
 $id = intval($input['id']);
 $title = trim($input['title']);
 $description = trim($input['description']);
+$requirements = trim($input['requirements'] ?? '');
 $location = trim($input['location']);
 $type = trim($input['type']);
+$department = trim($input['department'] ?? '');
+$status = trim($input['status'] ?? 'active');
+$salary = trim($input['salary'] ?? '');
+$tags = trim($input['tags'] ?? '');
 
 try {
     // Check if job exists
@@ -61,8 +66,8 @@ try {
     }
 
     // Update the job
-    $stmt = $pdo->prepare('UPDATE jobs SET title = ?, description = ?, location = ?, type = ? WHERE id = ?');
-    $success = $stmt->execute([$title, $description, $location, $type, $id]);
+    $stmt = $pdo->prepare('UPDATE jobs SET title = ?, description = ?, requirements = ?, location = ?, type = ?, department = ?, status = ?, salary = ?, tags = ? WHERE id = ?');
+    $success = $stmt->execute([$title, $description, $requirements, $location, $type, $department, $status, $salary, $tags, $id]);
 
     if ($success) {
         echo json_encode([
