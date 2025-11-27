@@ -59,7 +59,7 @@
             // Testimonial cards animation
             const testimonialCards = document.querySelectorAll('.testimonial-card');
             testimonialCards.forEach((card, index) => {
-                const delay = isMobile ? index * animationDelay : index * 0.15;
+                const delay = isMobile ? index * animationDelay : index * 1.25;
                 card.style.animationDelay = `${delay}s`;
                 card.classList.add('slide-in-right');
                 observer.observe(card);
@@ -68,7 +68,7 @@
             // Industry cards animation
             const industryCards = document.querySelectorAll('.industry-card');
             industryCards.forEach((card, index) => {
-                const delay = isMobile ? index * animationDelay : index * 0.1;
+                const delay = isMobile ? index * animationDelay : index * 1.1;
                 card.style.animationDelay = `${delay}s`;
                 card.classList.add('fade-in');
                 observer.observe(card);
@@ -662,3 +662,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+
+
+
