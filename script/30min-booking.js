@@ -145,10 +145,30 @@ nameField.addEventListener("input", function () {
     this.value = this.value.replace(/[^A-Za-z\s]/g, ""); 
 });
 
-// PHONE — only digits
+// PHONE — only digits and real-time validation
 const phoneField = document.getElementById("bookingPhone");
 phoneField.addEventListener("input", function () {
-    this.value = this.value.replace(/[^0-9]/g, ""); 
+    // Remove any non-digit characters
+    this.value = this.value.replace(/[^0-9]/g, "");
+    
+    // Limit to 10 digits
+    if (this.value.length > 10) {
+        this.value = this.value.slice(0, 10);
+    }
+    
+    // Real-time validation feedback
+    const phoneError = document.getElementById("phoneError");
+    if (this.value.length > 0) {
+        if (!/^[6-9]/.test(this.value)) {
+            phoneError.textContent = "Phone number must start with 6, 7, 8, or 9.";
+        } else if (this.value.length !== 10) {
+            phoneError.textContent = "Phone number must be exactly 10 digits.";
+        } else {
+            phoneError.textContent = "";
+        }
+    } else {
+        phoneError.textContent = "";
+    }
 });
 
 // ================= FINAL FORM SUBMIT + VALIDATION =================
@@ -167,8 +187,13 @@ document.getElementById("bookingFormPage").addEventListener("submit", async func
 
     // ----------- PHONE VALIDATION ------------
     const phoneError = document.getElementById("phoneError");
-    if (!/^[0-9]{10}$/.test(phoneField.value.trim())) {
-        phoneError.textContent = "Phone number must be 10 digits.";
+    const phoneValue = phoneField.value.trim();
+    
+    if (phoneValue === "") {
+        phoneError.textContent = "Phone number is required.";
+        isValid = false;
+    } else if (!/^[6-9][0-9]{9}$/.test(phoneValue)) {
+        phoneError.textContent = "Phone number must start with 6-9 and be exactly 10 digits.";
         isValid = false;
     } else {
         phoneError.textContent = "";
