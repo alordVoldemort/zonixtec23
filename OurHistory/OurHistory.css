@@ -1436,9 +1436,11 @@ nav {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./Assets/c5450f760d121373030f6b020aeb3e43\ 1.png") center/cover
       no-repeat;
-  padding: 80px 30px;
+  padding: 80px 60px;
   border-radius: 12px;
-  margin: 60px 0;
+  margin: 60px auto;
+  max-width: 1200px;
+  box-sizing: border-box;
 }
 
 .story-heading {
@@ -1455,11 +1457,12 @@ nav {
 }
 
 .story-section p {
-  max-width: 900px;
+  max-width: 1080px;
   margin: 20px auto;
   font-size: 1.1rem;
   line-height: 1.9;
   color: #e2e8f0;
+  box-sizing: border-box;
 }
 
 /* CTA SECTION */
