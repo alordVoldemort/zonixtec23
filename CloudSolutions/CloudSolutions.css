@@ -601,9 +601,11 @@
             border-radius: 20px;
             padding: 50px;
             text-align: center;
-            margin: 80px 0;
+            margin: 80px auto;
+            max-width: 1200px;
             position: relative;
             overflow: hidden;
+        }
 
         .cta-container::before {
             content: "";
@@ -634,7 +636,7 @@
             z-index: 1;
         }
 
-        .cta-button-large {
+        .cta-button-large-home {
             background: linear-gradient(45deg, var(--primary), var(--secondary));
             color: white;
             padding: 15px 40px;
@@ -649,6 +651,25 @@
             position: relative;
             z-index: 1;
             transform: translateZ(0);
+            text-decoration: none;
+        }
+         .cta-button-large {
+           background: rgba(15, 23, 42, 0.9);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;    
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            transform: translateZ(0);
+            text-decoration: none;
         }
 
         .cta-button-large:hover {
@@ -1382,4 +1403,3 @@
                 padding-bottom: 10px;
             }
         }
-  

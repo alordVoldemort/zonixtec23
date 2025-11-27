@@ -1,0 +1,129 @@
+/* FAQ Section - Reusable Component */
+/* Include this file in any page that needs FAQ styling */
+
+.faq-section {
+    background: rgba(10, 10, 26, 0.7);
+    border-radius: 10px;
+    padding: 60px;
+    margin-bottom: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: var(--secondary);
+    margin-bottom: 40px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: rgba(0, 102, 255, 0.3);
+}
+
+.faq-question {
+    padding: 25px 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--light);
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    color: var(--secondary);
+}
+
+.faq-question span {
+    flex: 1;
+    padding-right: 15px;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-item.active .faq-question {
+    color: var(--secondary);
+}
+
+.faq-answer {
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 30px 25px;
+    max-height: 500px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 40px 20px;
+    }
+
+    .faq-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .faq-question {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        padding: 0 20px;
+    }
+
+    .faq-item.active .faq-answer {
+        padding: 0 20px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-section {
+        padding: 30px 15px;
+    }
+
+    .faq-question {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+
+    .faq-answer {
+        font-size: 0.9rem;
+    }
+}

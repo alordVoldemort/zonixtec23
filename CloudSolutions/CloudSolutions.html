@@ -17,13 +17,15 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <link rel="stylesheet" href="../CSS/30min-model.css">
     <link rel="stylesheet" href="../CSS/orbital-tech-stack.css">
+    <link rel="stylesheet" href="../CSS/faq.css">
    
     <!-- Responsive Fixes CSS -->
 
 
     <!-- Navbar CSS -->
     <link rel="stylesheet" href="../CSS/navbar.css">
-    <link rel="stylesheet" href="./CloudSolutions.css">
+    <link rel="stylesheet" href ="./CloudSolutions.css">
+    <link rel="stylesheet" href="../CSS/footer.css"/>
 </head>
 
 <body>
@@ -123,7 +125,7 @@
                 and <strong>ensure business continuity</strong> while focusing on what matters most—your customers.
             </p>
 
-            <a href="../Booking/booking.html?service=cloud-solutions" class="cta-button-large">Get Started with Cloud
+            <a href="../Booking/booking.html?service=cloud-solutions" class="cta-button-large-home">Get Started with Cloud
                 Transformation</a>
 
             <div class="hero-image">
@@ -439,7 +441,7 @@
             <div class="impact-grid">
                 <div class="impact-card">
                     <div class="impact-icon">
-                        <i class="fas fa-chart-line-down"></i>
+                        <i class="fas fa-arrow-down-short-wide"></i>
                     </div>
                     <h3 class="impact-title">Reduced Infrastructure Costs</h3>
                     <p class="impact-description">Reduce infrastructure costs by up to 40% by eliminating capital
@@ -746,6 +748,8 @@
             // Create dynamic data lines for cloud animation
             const cloudAnimation = document.querySelector('.cloud-animation');
             function createDataLine() {
+                if (!cloudAnimation) return; // Exit if element doesn't exist
+                
                 const top = Math.random() * 200;
                 const left = Math.random() * 250;
                 const angle = (Math.random() * 40) - 20;
@@ -765,14 +769,16 @@
             }
 
             // Create new data lines periodically
-            setInterval(createDataLine, 300);
+            if (cloudAnimation) {
+                setInterval(createDataLine, 300);
+            }
         });
     </script>
-    <script src="Customscroll.js"></script>
+    <script src="../Customscroll.js"></script>
 
     <!-- Chatbot -->
-    <link rel="stylesheet" href="./CSS/chatbot.css">
-    <script src="./script/chatbot.js"></script>
+    <link rel="stylesheet" href="../CSS/chatbot.css">
+    <script src="../script/chatbot.js"></script>
 
 
 
@@ -961,7 +967,7 @@
     <!-- Booking Modal Script -->
     <script src="../script/booking-modal.js"></script>
     <script src="../script/navbar.js"></script>
-    <script src="../script/30min-booking.js"></script>x
+    <script src="../script/30min-booking.js"></script>
     <script src="../script/allabout.js"></script>
 
 </body>
