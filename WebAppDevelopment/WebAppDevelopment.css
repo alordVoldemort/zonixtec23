@@ -1443,10 +1443,582 @@ h6 {
     
 }
 
-/* Tablet Adjustments */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* ===== iPad Specific Responsive Styles ===== */
+
+/* iPad Mini (768px - 819px) */
+@media (min-width: 768px) and (max-width: 819px) {
     .container {
         padding: 0 30px;
+        max-width: 100%;
+    }
+    
+    /* Hero Section */
+    .services-hero {
+        padding: 150px 0 80px;
+    }
+    
+    .services-hero-title {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        max-width: 90%;
+    }
+    
+    /* Overview Section */
+    .overview-section {
+        padding: 40px 30px;
+        margin-bottom: 50px;
+    }
+    
+    .overview-section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .overview-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .overview-text {
+        font-size: 1.05rem;
+        text-align: left;
+    }
+    
+    .overview-highlight-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    /* Flashcards */
+    .flashcards-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    .flashcards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .flashcard {
+        height: 320px;
+    }
+    
+    .service-title {
+        font-size: 1.3rem;
+    }
+    
+    /* Features Section */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .feature-item {
+        padding: 22px;
+        gap: 15px;
+    }
+    
+    .feature-content h3 {
+        font-size: 1.15rem;
+    }
+    
+    /* Challenges Section */
+    .challenges-container {
+        padding: 30px 25px;
+    }
+    
+    .challenges-title {
+        font-size: 1.6rem;
+        margin-bottom: 35px;
+    }
+    
+    .challenges-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+    
+    /* Advantage Section */
+    .advantage-content {
+        padding: 40px 35px;
+    }
+    
+    .advantage-list li {
+        font-size: 1.05rem;
+        padding: 18px;
+    }
+    
+    /* Process Section */
+    .process-steps {
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+    
+    .process-step {
+        flex: 0 0 calc(50% - 15px);
+        max-width: 300px;
+    }
+    
+    .step-number {
+        width: 70px;
+        height: 70px;
+        font-size: 1.6rem;
+    }
+    
+    /* Technology Stack */
+    .tech-stack-section {
+        padding: 50px 30px;
+    }
+    
+    .orbital-container {
+        max-width: 100%;
+    }
+    
+    /* Impact Section */
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+    
+    .impact-item {
+        padding: 28px 22px;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        padding: 50px 35px;
+        margin-bottom: 60px;
+    }
+    
+    .cta-title {
+        font-size: 2rem;
+    }
+    
+    .cta-subtitle {
+        font-size: 1.05rem;
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+/* iPad Air (820px - 1023px) */
+@media (min-width: 820px) and (max-width: 1023px) {
+    .container {
+        padding: 0 40px;
+        max-width: 100%;
+    }
+    
+    /* Hero Section */
+    .services-hero {
+        padding: 160px 0 90px;
+    }
+    
+    .services-hero-title {
+        font-size: 3.2rem;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.15rem;
+        max-width: 85%;
+    }
+    
+    /* Overview Section */
+    .overview-section {
+        padding: 50px 40px;
+        margin-bottom: 55px;
+    }
+    
+    .overview-section h2 {
+        font-size: 2.1rem;
+        margin-bottom: 35px;
+    }
+    
+    .overview-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+        align-items: center;
+    }
+    
+    .overview-text {
+        font-size: 1.1rem;
+    }
+    
+    /* Flashcards */
+    .flashcards-title {
+        font-size: 2.2rem;
+        margin-bottom: 45px;
+    }
+    
+    .flashcards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+    
+    .flashcard {
+        height: 340px;
+    }
+    
+    /* Features Section */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+    
+    .feature-item {
+        padding: 25px;
+    }
+    
+    /* Challenges Section */
+    .challenges-container {
+        padding: 35px 30px;
+    }
+    
+    .challenges-title {
+        font-size: 1.7rem;
+        margin-bottom: 40px;
+    }
+    
+    .challenges-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    /* Advantage Section */
+    .advantage-content {
+        padding: 45px 40px;
+    }
+    
+    .advantage-list li {
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+    
+    /* Process Section */
+    .process-steps {
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+    
+    .process-step {
+        flex: 1;
+        padding: 0 10px;
+    }
+    
+    .step-number {
+        width: 75px;
+        height: 75px;
+        font-size: 1.7rem;
+    }
+    
+    .step-title {
+        font-size: 1.15rem;
+    }
+    
+    /* Technology Stack */
+    .tech-stack-section {
+        padding: 55px 40px;
+    }
+    
+    /* Impact Section */
+    .impact-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        padding: 55px 40px;
+        margin-bottom: 65px;
+    }
+    
+    .cta-title {
+        font-size: 2.2rem;
+    }
+    
+    .cta-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: 2.3rem;
+        margin-bottom: 2.8rem;
+    }
+}
+
+/* iPad Pro 11" (834px - 1023px) - Portrait */
+@media (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) {
+    .container {
+        padding: 0 45px;
+    }
+    
+    .services-hero {
+        padding: 165px 0 95px;
+    }
+    
+    .services-hero-title {
+        font-size: 3.3rem;
+    }
+    
+    .overview-content {
+        gap: 40px;
+    }
+    
+    /* Overview Image - Make smaller for iPad Pro 11" */
+    .overview-highlight-container img {
+        width: 80%;
+        max-width: 400px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .flashcards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .impact-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* iPad Pro 12.9" (1024px - 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .container {
+        padding: 0 50px;
+        max-width: 1200px;
+    }
+    
+    /* Hero Section */
+    .services-hero {
+        padding: 170px 0 100px;
+    }
+    
+    .services-hero-title {
+        font-size: 3.4rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+        max-width: 80%;
+    }
+    
+    /* Header/Navigation */
+    header {
+        padding: 0;
+    }
+    
+    nav {
+        padding: 15px 0;
+    }
+    
+    .nav-links {
+        gap: 22px;
+    }
+    
+    .nav-links a {
+        font-size: 0.95rem;
+    }
+    
+    .cta-buttons {
+        font-size: 0.9rem;
+        padding: 10px 18px;
+    }
+    
+    /* Overview Section */
+    .overview-section {
+        padding: 55px 50px;
+        margin-bottom: 60px;
+    }
+    
+    .overview-section h2 {
+        font-size: 2.3rem;
+        margin-bottom: 40px;
+    }
+    
+    .overview-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+    
+    .overview-text {
+        font-size: 1.15rem;
+    }
+    
+    /* Overview Image - Make smaller for iPad Pro */
+    .overview-highlight-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .overview-highlight-container img {
+        width: 85%;
+        max-width: 450px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    /* Flashcards */
+    .flashcards-title {
+        font-size: 2.4rem;
+        margin-bottom: 50px;
+    }
+    
+    .flashcards-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+    .flashcard {
+        height: 360px;
+    }
+    
+    /* Features Section */
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    
+    /* Challenges Section */
+    .challenges-container {
+        padding: 40px 35px;
+    }
+    
+    .challenges-title {
+        font-size: 1.8rem;
+        margin-bottom: 45px;
+    }
+    
+    .challenges-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+    }
+    
+    /* Advantage Section */
+    .advantage-content {
+        padding: 50px 45px;
+        max-width: 950px;
+    }
+    
+    .advantage-list li {
+        font-size: 1.15rem;
+        padding: 22px;
+    }
+    
+    /* Process Section */
+    .process-steps {
+        gap: 15px;
+    }
+    
+    .process-step {
+        padding: 0 12px;
+    }
+    
+    .step-number {
+        width: 80px;
+        height: 80px;
+        font-size: 1.8rem;
+    }
+    
+    .step-title {
+        font-size: 1.2rem;
+    }
+    
+    /* Technology Stack */
+    .tech-stack-section {
+        padding: 60px 50px;
+    }
+    
+    /* Impact Section */
+    .impact-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    
+    .impact-item {
+        padding: 30px 25px;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        padding: 60px 50px;
+        margin-bottom: 70px;
+    }
+    
+    .cta-title {
+        font-size: 2.4rem;
+    }
+    
+    .cta-subtitle {
+        font-size: 1.15rem;
+        max-width: 750px;
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+    }
+}
+
+/* iPad Pro 12.9" Landscape (1024px - 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    .services-hero {
+        padding: 140px 0 80px;
+    }
+    
+    .overview-content {
+        gap: 40px;
+    }
+    
+    /* Overview Image - Make smaller for iPad Pro Landscape */
+    .overview-highlight-container img {
+        width: 80%;
+        max-width: 420px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .flashcards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .process-steps {
+        gap: 10px;
+    }
+    
+    .process-step {
+        padding: 0 8px;
+    }
+}
+
+/* General Tablet Adjustments (768px - 1024px) - Fallback */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 0 35px;
     }
     
     .services-hero-title {
@@ -1464,11 +2036,6 @@ h6 {
     .impact-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
-    .tech-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
 }
 
 /* Utility Classes for Mobile */
@@ -1542,5 +2109,311 @@ h6 {
     .container {
         width: 100%;
         max-width: 100%;
+    }
+}
+
+/* ===== Additional iPad Alignment & Layout Fixes ===== */
+
+/* iPad - Fix for orbital tech stack section */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .tech-stack-section {
+        padding: 60px 0;
+    }
+    
+    .orbital-container {
+        position: relative;
+        width: 100%;
+        max-width: 650px;
+        height: 650px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+    
+    .outer-orbit {
+        width: 600px;
+        height: 600px;
+    }
+    
+    .middle-orbit {
+        width: 430px;
+        height: 430px;
+    }
+    
+    .inner-orbit {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .tech-icon {
+        width: 65px;
+        height: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .tech-icon i {
+        font-size: 1.8rem;
+    }
+    
+    .tech-label {
+        font-size: 0.8rem;
+        margin-top: 8px;
+    }
+    
+    .center-text h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* iPad Pro - Larger orbital container */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .orbital-container {
+        max-width: 700px;
+        height: 700px;
+    }
+    
+    .outer-orbit {
+        width: 650px;
+        height: 650px;
+    }
+    
+    .middle-orbit {
+        width: 470px;
+        height: 470px;
+    }
+    
+    .inner-orbit {
+        width: 290px;
+        height: 290px;
+    }
+    
+    .tech-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .tech-icon i {
+        font-size: 1.9rem;
+    }
+    
+    .center-text h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* iPad - Fix section padding consistency */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .section-padding {
+        padding: 50px 0;
+    }
+    
+    .challenges-section {
+        padding: 40px 0;
+    }
+    
+    .process-section {
+        margin-bottom: 60px;
+    }
+}
+
+/* iPad - Fix overview image alignment */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .overview-highlight-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .overview-highlight-container img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+/* iPad - Fix flashcard text alignment */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .flashcard-back {
+        padding: 25px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .service-desc {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+/* iPad - Fix feature items alignment */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .feature-item {
+        align-items: flex-start;
+    }
+    
+    .feature-content {
+        flex: 1;
+    }
+    
+    .feature-content p {
+        line-height: 1.7;
+    }
+}
+
+/* iPad - Fix process steps connector line */
+@media (min-width: 820px) and (max-width: 1023px) {
+    .process-steps::before {
+        top: 40px;
+        left: 10%;
+        right: 10%;
+    }
+}
+
+/* iPad - Fix CTA button alignment */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .cta-button-large {
+        padding: 14px 35px;
+        font-size: 1.05rem;
+    }
+}
+
+/* iPad - Fix FAQ section spacing */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .faq-section {
+        padding: 50px 0;
+    }
+    
+    .faq-container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .faq-question {
+        padding: 18px 20px;
+        font-size: 1.05rem;
+    }
+    
+    .faq-answer {
+        padding: 0 20px 18px;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+
+/* iPad - Fix impact items spacing */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .impact-item h3 {
+        font-size: 1.25rem;
+        margin-bottom: 12px;
+    }
+    
+    .impact-item p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+/* iPad - Fix hero button alignment */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+/* iPad - Ensure proper text wrapping */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .hero-subtitle,
+    .section-subtitle,
+    .cta-subtitle {
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+}
+
+/* iPad - Fix grid gaps for better spacing */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .flashcards-grid,
+    .features-grid,
+    .impact-grid,
+    .challenges-list {
+        gap: 25px;
+    }
+}
+
+/* iPad Pro - Optimize for larger screens */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .flashcards-grid,
+    .features-grid,
+    .impact-grid,
+    .challenges-list {
+        gap: 30px;
+    }
+}
+
+/* ===== iPad Header & Navigation Fixes ===== */
+
+/* iPad - Header adjustments */
+@media (min-width: 768px) and (max-width: 1366px) {
+    header {
+        padding: 0;
+    }
+    
+    nav {
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo img {
+        height: 38px;
+        width: auto;
+    }
+    
+    .nav-links {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-links a {
+        font-size: 0.92rem;
+        padding: 8px 12px;
+    }
+    
+    .cta-buttons {
+        font-size: 0.88rem;
+        padding: 9px 18px;
+        white-space: nowrap;
+    }
+    
+    .mobile-menu-btn {
+        display: none;
+    }
+}
+
+/* iPad - Ensure proper container width */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/* iPad - Fix section spacing consistency */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .section-padding {
+        padding: 50px 0;
+    }
+    
+    .services-hero {
+        padding-top: 150px;
     }
 }
