@@ -1710,6 +1710,11 @@ h6 {
         flex-wrap: nowrap;
     }
     
+    /* Hide horizontal line on iPad Air */
+    .process-steps::before {
+        display: none;
+    }
+    
     .process-step {
         flex: 1;
         padding: 0 10px;
@@ -2266,10 +2271,9 @@ h6 {
 
 /* iPad - Fix process steps connector line */
 @media (min-width: 820px) and (max-width: 1023px) {
+    /* Hide horizontal line on iPad Air */
     .process-steps::before {
-        top: 40px;
-        left: 10%;
-        right: 10%;
+        display: none;
     }
 }
 
