@@ -27,6 +27,11 @@
     <link rel="stylesheet" href="../CSS/navbar.css">
     <link rel="stylesheet" href="../CSS/booking-modal.css">
     <link rel="stylesheet" href="./BillingInvoice.css">
+
+    <link rel="stylesheet" href="../CSS/allDropdown.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/mobile-menu.css">
+    
 </head>
 
 <body>
@@ -748,81 +753,9 @@
             cursor: pointer;
             margin: 5px 0;
         }
-
-        /* Mobile Menu Styles */
-
-        /* Hamburger menu animation */
-        .hamburger-line {
-            display: block;
-            width: 25px;
-            height: 3px;
-            background: var(--light);
-            margin: 5px 0;
-            transition: all 0.3s ease;
-        }
-
-        .mobile-menu-btn.active .hamburger-line:nth-child(1) {
-            transform: rotate(-45deg) translate(-5px, 6px);
-        }
-
-        .mobile-menu-btn.active .hamburger-line:nth-child(2) {
-            opacity: 0;
-        }
-
-        .mobile-menu-btn.active .hamburger-line:nth-child(3) {
-            transform: rotate(45deg) translate(-5px, -6px);
-        }
     </style>
 
     <script>
-        // Mobile menu functionality
-        function toggleMobileMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-
-            navLinks.classList.toggle('active');
-            mobileMenuBtn.classList.toggle('active');
-        }
-
-        // Make function globally available
-        window.toggleMobileMenu = toggleMobileMenu;
-
-        // Close mobile menu when clicking on links
-        document.addEventListener('DOMContentLoaded', function () {
-            const navLinks = document.querySelectorAll('.nav-links a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    const navLinksContainer = document.querySelector('.nav-links');
-                    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-
-                    if (navLinksContainer.classList.contains('active')) {
-                        navLinksContainer.classList.remove('active');
-                        mobileMenuBtn.classList.remove('active');
-                    }
-                });
-            });
-
-            // Close mobile menu when clicking outside
-            document.addEventListener('click', function (event) {
-                const navLinks = document.querySelector('.nav-links');
-                const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-                const isClickInsideNav = navLinks.contains(event.target);
-                const isClickOnMenuBtn = mobileMenuBtn.contains(event.target);
-
-                if (!isClickInsideNav && !isClickOnMenuBtn && navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
-                    mobileMenuBtn.classList.remove('active');
-                }
-            });
-        });
-
-        // Footer dropdown functionality
-        document.querySelectorAll('.footer-dropdown-header').forEach(header => {
-            header.addEventListener('click', () => {
-                const parent = header.parentElement;
-                parent.classList.toggle('open');
-            });
-        });
 
         // FAQ Accordion Functionality
         document.addEventListener('DOMContentLoaded', function () {
@@ -1035,5 +968,6 @@
     <script src="../script/allabout.js"></script>
     <script src="../script/navbar.js"></script>
     <script src="../script/30min-booking.js"></script>
+    <script src="../script/footer.js"></script>
 </body>
 </html>
