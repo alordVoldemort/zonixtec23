@@ -858,6 +858,24 @@
         }
 
         /* Responsive styles */
+        @media (min-width: 768px) {
+            .process-steps {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 25px;
+            }
+
+            .process-steps::before {
+                display: none;
+            }
+
+            .process-step {
+                flex: 0 0 calc(33.333% - 20px);
+                min-width: 250px;
+                margin-bottom: 20px;
+            }
+        }
+
         @media (max-width: 992px) {
             .services-overview {
                 flex-direction: column;
@@ -867,8 +885,16 @@
                 flex-direction: column;
             }
 
+            .process-steps {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+            }
+
             .process-step {
-                min-width: 200px;
+                flex: 0 0 calc(50% - 20px);
+                min-width: 280px;
+                margin-bottom: 25px;
             }
         }
 
@@ -879,6 +905,8 @@
 
             .section-title {
                 font-size: 2rem;
+                margin-top: 40px;
+                margin-bottom: 2rem;
             }
 
             .stats-grid {
@@ -916,6 +944,49 @@
             .impact-container {
                 padding: 30px 20px;
             }
+
+            /* Enhanced mobile responsive process steps */
+            .process-section {
+                margin-bottom: 60px;
+                padding: 0 10px;
+            }
+
+            .process-steps {
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+                margin-top: 30px;
+            }
+
+            .process-steps::before {
+                display: none;
+            }
+
+            .process-step {
+                width: 100%;
+                max-width: 320px;
+                padding: 20px;
+                background: none;
+                border-radius: 0;
+                border: none;
+            }
+
+            .step-number {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+
+            .step-title {
+                font-size: 1.1rem;
+                margin-bottom: 8px;
+            }
+
+            .step-description {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
         }
 
         @media (max-width: 576px) {
@@ -923,42 +994,53 @@
                 font-size: 2.2rem;
             }
 
-            .process-step {
-                min-width: 100%;
+            .section-title {
+                font-size: 1.8rem;
+                margin-bottom: 1.5rem;
             }
 
             .cta-title {
                 font-size: 1.8rem;
             }
+
+            /* Enhanced small screen process design */
+            .process-section {
+                margin-bottom: 50px;
+                padding: 0 5px;
+            }
+
+            .process-steps {
+                gap: 30px;
+                margin-top: 25px;
+            }
+
+            .process-step {
+                max-width: 280px;
+                padding: 15px;
+                background: none;
+                border-radius: 0;
+                border: none;
+            }
+
+            .step-number {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+                margin-bottom: 12px;
+            }
+
+            .step-title {
+                font-size: 1rem;
+                margin-bottom: 6px;
+            }
+
+            .step-description {
+                font-size: 0.85rem;
+                line-height: 1.5;
+            }
         }
 
         @media (max-width: 768px) {
-            .nav-links {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 80%;
-                max-width: 300px;
-                height: 100vh;
-                background-color: rgba(15, 23, 42, 0.95);
-                backdrop-filter: blur(10px);
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 30px;
-                transition: right 0.3s ease;
-                z-index: 999;
-            }
-
-            .nav-links.active {
-                right: 0;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-                z-index: 1000;
-            }
-
             .hero-text h1 {
                 font-size: 36px;
             }
@@ -992,7 +1074,39 @@
             }
         }
 
-        /*  Get Start Button    */
+        /*  CTA Button Styles    */
+        .cta-button {
+            background: var(--tech-gradient);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+        }
+
+        .cta-button i {
+            font-size: 14px;
+            margin-right: 0;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+        }
+
+        .cta-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(100, 149, 255, 0.4);
+        }
+
         .cta-buttons {
             background: linear-gradient(45deg, var(--primary), #5ed6eb);
             color: var(--dark);
@@ -1000,6 +1114,16 @@
             border-radius: 30px;
             font-weight: 600;
             transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+
+        .cta-buttons i {
+            font-size: 14px;
+            margin-right: 0;
         }
 
         .cta-buttons:hover {

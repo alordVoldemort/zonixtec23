@@ -133,17 +133,6 @@
             color: var(--secondary);
         }
 
-        /* .nav-links a:not(.cta-button)::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--secondary);
-            transition: width 0.3s ease;
-        } */
-
         .nav-links a:not(.cta-button):hover::after {
             width: 100%;
         }
@@ -159,6 +148,7 @@
             border: none;
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+            text-decoration: none;
         }
 
         .cta-button:hover {
@@ -317,6 +307,7 @@
 
         /* AI Services Section */
         .ai-services-section {
+            padding-top: 40px;
             margin-bottom: 80px;
         }
 
@@ -330,6 +321,13 @@
             height: 350px;
             perspective: 1000px;
             cursor: pointer;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .service-card:hover {
+            text-decoration: none;
         }
 
         .service-card-inner {
@@ -400,29 +398,12 @@
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 15px;
+            color: var(--light);
         }
 
         .service-desc {
             color: #94a3b8;
             line-height: 1.7;
-        }
-
-        .service-cta {
-            background: var(--tech-gradient);
-            color: white;
-            padding: 6px 10px;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
-        }
-
-        .service-cta:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
         }
 
         /* Results Section */

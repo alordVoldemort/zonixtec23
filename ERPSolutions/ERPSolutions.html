@@ -29,7 +29,8 @@
 
     <!-- Navbar CSS -->
     <link rel="stylesheet" href="../CSS/navbar.css">
-    <link rel="stylesheet" href="../CSS/booking-modal.css">
+    <link rel="stylesheet" href="../CSS/mobile-menu.css">
+    
 </head>
 
 <body>
@@ -95,10 +96,12 @@
                         </div>
                     </div>
 
+            
+
                     <a href="../Career/Career.html">Career</a>
                     <a href="../Contact/contact.html">Contact</a>
-                    <a href="javascript:void(0);" class="cta-buttons" onclick="openBookingModal()">
-                        <i class="fas fa-phone-alt"></i> Book A 30 Min Call
+                    <a href="javascript:void(0);" class="cta-button" onclick="openBookingModal()">
+                        <i class="fas fa-phone"></i> Book A 30 Min Call
                     </a>
 
                 </div>
@@ -120,15 +123,6 @@
                 <div class="erp-hero">
                     <h1 class="hero-title">Custom ERP Solutions</h1>
                     <h2 class="hero-subtitle">Integrate, Automate, Accelerate</h2>
-                    <p class="hero-description">At Zonixtec, we design powerful ERP solutions that bring every part of
-                        your business together—from finance and supply chain to HR and production. Our ERP systems
-                        eliminate silos, enhance collaboration, and deliver real-time insights—helping organizations
-                        make faster, smarter decisions while improving overall efficiency.</p>
-
-                    <p class="hero-description">At Zonixtec, we design powerful ERP solutions that bring every part of
-                        your business together—from finance and supply chain to HR and production. Our ERP systems
-                        eliminate silos, enhance collaboration, and deliver real-time insights—helping organizations
-                        make faster, smarter decisions while improving overall efficiency.</p>
 
                     <p class="hero-description">Our ERP systems eliminate silos, enhance collaboration, and deliver
                         real-time insights — helping organizations make faster, smarter decisions while improving
@@ -765,13 +759,49 @@
         });
     </script>
 
-
-
+    <!-- Simple Mobile Menu Script -->
     <script>
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
-            document.querySelector('.nav-links').classList.toggle('active');
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            const body = document.body;
+            
+            if (mobileMenuBtn && navLinks) {
+                mobileMenuBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    // Toggle active classes
+                    navLinks.classList.toggle('active');
+                    mobileMenuBtn.classList.toggle('active');
+                    body.classList.toggle('menu-open');
+                    
+                    // Update aria-expanded
+                    const isExpanded = navLinks.classList.contains('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', isExpanded);
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                        navLinks.classList.remove('active');
+                        mobileMenuBtn.classList.remove('active');
+                        body.classList.remove('menu-open');
+                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+                
+                // Close menu on window resize if desktop
+                window.addEventListener('resize', function() {
+                    if (window.innerWidth > 768) {
+                        navLinks.classList.remove('active');
+                        mobileMenuBtn.classList.remove('active');
+                        body.classList.remove('menu-open');
+                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
         });
-
     </script>
 
     <script src="Customscroll.js"></script>
@@ -963,7 +993,6 @@
 
     <!-- Booking Modal Script -->
     <script src="../script/booking-modal.js"></script>
-    <script src="../script/navbar.js"></script>
     <script src="../script/30min-booking.js"></script>
     <script src="../script/allabout.js"></script>
 </body>

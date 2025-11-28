@@ -18,6 +18,8 @@
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <link rel="stylesheet" href="./CSS/30min-model.css">
   <link rel="stylesheet" href="./CSS/orbital-tech-stack.css">
+  <link rel="stylesheet" href="./CSS/mobile-menu.css">
+
   <style>
     :root {
       --primary: #2563eb;
@@ -254,16 +256,7 @@
       box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
     }
 
-    .mobile-menu-btn {
-      display: none;
-      color: var(--light);
-      font-size: 1.5rem;
-      cursor: pointer;
-      z-index: 1001;
-      background: transparent;
-      border: none;
-      outline: none;
-    }
+
 
     /* UX/UI Hero Section */
     .uxui-hero {
@@ -656,7 +649,7 @@
     }
 
     .cta-button-large {
-      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      background: var(--dark);
       color: white;
       padding: 15px 40px;
       border-radius: 30px;
@@ -672,7 +665,7 @@
 
     .cta-button-large:hover {
       transform: translateY(-3px);
-      background: linear-gradient(45deg, var(--primary), var(--secondary));
+
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     }
 
@@ -765,14 +758,7 @@
       padding-bottom: 10px;
     }
 
-    .hamburger-line {
-      display: block;
-      width: 25px;
-      height: 3px;
-      background-color: var(--light);
-      margin: 5px 0;
-      transition: all 0.3s ease;
-    }
+
 
     /* .footer-col h3::after {
             content: '';
@@ -953,10 +939,7 @@
         padding: 30px 20px;
       }
 
-      .mobile-menu-btn {
-        display: block;
-        z-index: 1001;
-      }
+
     }
 
     @media (max-width: 576px) {
@@ -1162,10 +1145,7 @@
         padding: 8px 15px;
       }
 
-      .mobile-menu-btn {
-        display: block;
-        z-index: 1000;
-      }
+
     }
 
     @media (max-width: 576px) {
@@ -1255,7 +1235,7 @@
 
   <!-- Navbar CSS -->
   <link rel="stylesheet" href="./CSS/navbar.css" />
-  <link rel="stylesheet" href="./CSS/booking-modal.css" />
+ 
 </head>
 
 <body>
@@ -1693,7 +1673,7 @@
           drive business growth. Our design team is ready to bring your vision to life.
         </p>
         <button class="cta-button-large"
-          onclick="window.location.href='./Booking/booking.html?service=ui-ux-design'">Start Your Design Project
+          onclick="window.location.href='./Booking/Booking.html?service=ui-ux-design'">Start Your Design Project
           Today</button>
       </div>
 
