@@ -247,7 +247,7 @@ nav {
 /* Case Study Hero */
 .case-hero {
   padding-top: 130px;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -883,8 +883,7 @@ nav {
   gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 90px 10px;
-  /* background: #0c192b; */
+  padding: 40px 10px;
   font-family: "Poppins", sans-serif;
   color: #e8edf3;
 }

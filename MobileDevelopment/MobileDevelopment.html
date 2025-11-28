@@ -192,6 +192,62 @@
             position: relative;
         }
        
+        /* Mobile Excellence Hero Section */
+        .mobile-excellence-hero {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 80px;
+            padding: 40px;
+            background: rgba(15, 23, 42, 0.4);
+            border-radius: 20px;
+            border: 1px solid rgba(100, 116, 139, 0.2);
+        }
+       
+        .excellence-content {
+            flex: 1;
+            min-width: 300px;
+        }
+       
+        .excellence-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 25px;
+            background: var(--tech-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+       
+        .excellence-description {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            line-height: 1.8;
+        }
+       
+        .excellence-image-container {
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid rgba(0, 242, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+       
+        .excellence-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.3s ease;
+        }
+       
+        .excellence-image-container:hover .excellence-image {
+            transform: scale(1.05);
+        }
+       
         .mobile-hero {
             text-align: center;
             max-width: 800px;
@@ -270,7 +326,7 @@
        
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 30px;
             margin-bottom: 80px;
         }
@@ -530,6 +586,8 @@
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             display: inline-block;
+            text-decoration: none;
+            
         }
        
         .cta-button-large:hover {
@@ -772,6 +830,24 @@
        
         /* Responsive styles */
         @media (max-width: 992px) {
+            .mobile-excellence-hero {
+                flex-direction: column;
+                gap: 40px;
+            }
+           
+            .excellence-image-container {
+                width: 100%;
+                height: 350px;
+            }
+           
+            .excellence-title {
+                font-size: 2.5rem;
+            }
+           
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+           
             .mobile-content {
                 flex-direction: column;
             }
@@ -786,6 +862,27 @@
         }
 
         @media (max-width: 768px) {
+            .mobile-excellence-hero {
+                padding: 30px 20px;
+            }
+           
+            .excellence-title {
+                font-size: 2.2rem;
+            }
+           
+            .excellence-description {
+                font-size: 1rem;
+            }
+           
+            .excellence-image-container {
+                height: 300px;
+            }
+           
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+           
             .hero-title {
                 font-size: 2.8rem;
             }
@@ -804,6 +901,22 @@
         }
        
         @media (max-width: 576px) {
+            .mobile-excellence-hero {
+                padding: 25px 15px;
+            }
+           
+            .excellence-title {
+                font-size: 1.8rem;
+            }
+           
+            .excellence-description {
+                font-size: 0.95rem;
+            }
+           
+            .excellence-image-container {
+                height: 250px;
+            }
+           
             .hero-title {
                 font-size: 2.2rem;
             }
@@ -1208,7 +1321,7 @@
     <link rel="stylesheet" href="../CSS/allDropdown.css">
 </head>
 <body>
-    
+   
     <!-- Header -->
  <header id="header">
         <div class="container">
@@ -1292,6 +1405,7 @@
    
     <section class="mobile-section">
         <div class="container">
+            <!-- Original Hero Section -->
             <div class="mobile-hero">
                 <h1 class="hero-title">Transform Your Business with Mobile Innovation</h1>
                 <p class="hero-subtitle">Cutting-edge Mobile Solutions for the Modern World</p>
@@ -1301,80 +1415,67 @@
                 <a href="../Booking/booking.html?service=mobile-development" class="cta-button-large">Start Your App Journey Today</a>
             </div>
            
-            <div class="mobile-content">
-                <div class="mobile-info">
-                    <h2 class="section-title">Mobile Development Excellence</h2>
-                    <p class="hero-description">
+            <!-- Mobile Development Excellence Section with Title, Description and Image -->
+            <div class="mobile-excellence-hero">
+                <div class="excellence-content">
+                    <h1 class="excellence-title">Mobile Development Excellence</h1>
+                    <p class="excellence-description">
                         We specialize in creating high-performance mobile applications that deliver exceptional user experiences. Our mobile solutions are built with cutting-edge technologies and designed for scalability, security, and seamless integration.
                     </p>
-                   
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <h3 class="feature-title">Intuitive UI/UX Design</h3>
-                            <p class="feature-text">Create engaging user experiences with intuitive interfaces that keep users coming back.</p>
-                        </div>
-                       
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-sync-alt"></i>
-                            </div>
-                            <h3 class="feature-title">Native & Cross-Platform Expertise</h3>
-                            <p class="feature-text">Build apps for any platform with our expertise in native and cross-platform development.</p>
-                        </div>
-                       
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-bolt"></i>
-                            </div>
-                            <h3 class="feature-title">Fast & Secure Performance</h3>
-                            <p class="feature-text">Deliver lightning-fast performance with enterprise-grade security measures.</p>
-                        </div>
-                       
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-plug"></i>
-                            </div>
-                            <h3 class="feature-title">API & Third-Party Integrations</h3>
-                            <p class="feature-text">Seamlessly integrate with existing systems and third-party services.</p>
-                        </div>
-                       
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-cloud"></i>
-                            </div>
-                            <h3 class="feature-title">Cloud-Ready Architecture</h3>
-                            <p class="feature-text">Build scalable applications with cloud-native architecture for future growth.</p>
-                        </div>
-                       
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-expand-arrows-alt"></i>
-                            </div>
-                            <h3 class="feature-title">Scalable & Future-Proof Solutions</h3>
-                            <p class="feature-text">Create applications that grow with your business and adapt to future needs.</p>
-                        </div>
+                </div>
+                <div class="excellence-image-container">
+                    <img src="../uploads/Mobile App Development.jpg" alt="Mobile Development Excellence" class="excellence-image">
+                </div>
+            </div>
+           
+            <!-- Features Grid - 3 rows, 2 columns -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
+                    <h3 class="feature-title">Intuitive UI/UX Design</h3>
+                    <p class="feature-text">Create engaging user experiences with intuitive interfaces that keep users coming back.</p>
                 </div>
                
-                <div class="mobile-phone-container">
-                    <div id="webgl-warning">
-                        <div class="phone-fallback">
-                            <div class="phone-fallback-content">
-                                <div class="fallback-icon">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </div>
-                                <div style="width:100%; height:100%; overflow:hidden;">
-  <img src="../uploads/Mobile App Development.jpg" alt="Not Found"
-       style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;">
-</div>
-                                <h3>Mobile App Development</h3>
-                                <p>Your browser doesn't support WebGL, but we're still ready to build your next mobile application!</p>
-                            </div>
-                        </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
                     </div>
+                    <h3 class="feature-title">Native & Cross-Platform Expertise</h3>
+                    <p class="feature-text">Build apps for any platform with our expertise in native and cross-platform development.</p>
+                </div>
+               
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Fast & Secure Performance</h3>
+                    <p class="feature-text">Deliver lightning-fast performance with enterprise-grade security measures.</p>
+                </div>
+               
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 class="feature-title">API & Third-Party Integrations</h3>
+                    <p class="feature-text">Seamlessly integrate with existing systems and third-party services.</p>
+                </div>
+               
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="feature-title">Cloud-Ready Architecture</h3>
+                    <p class="feature-text">Build scalable applications with cloud-native architecture for future growth.</p>
+                </div>
+               
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Scalable & Future-Proof Solutions</h3>
+                    <p class="feature-text">Create applications that grow with your business and adapt to future needs.</p>
                 </div>
             </div>
            
@@ -1440,31 +1541,31 @@
         <div class="process-step">
             <div class="step-number">1</div>
             <h3 class="step-title">Discovery & Research</h3>
-            <p class="step-description">Understand business goals, audience, and design preferences</p>
+        
         </div>
        
         <div class="process-step">
             <div class="step-number">2</div>
             <h3 class="step-title">Wireframing & UI Design</h3>
-            <p class="step-description">Create visual layouts and design prototypes</p>
+           
         </div>
        
         <div class="process-step">
             <div class="step-number">3</div>
             <h3 class="step-title">Development</h3>
-            <p class="step-description">Convert designs into high-performing, responsive websites</p>
+           
         </div>
        
         <div class="process-step">
             <div class="step-number">4</div>
             <h3 class="step-title">Testing & QA</h3>
-            <p class="step-description">Ensure flawless performance and cross-browser compatibility</p>
+           
         </div>
        
         <div class="process-step">
             <div class="step-number">5</div>
             <h3 class="step-title">Deployment & Maintenance</h3>
-            <p class="step-description">Launch with confidence and provide continuous improvements</p>
+            
         </div>
     </div>
 </div>
@@ -1475,7 +1576,7 @@
 <section class="section-padding tech-stack-section">
     <div class="container">
         <h2 class="section-title">Our Technology <span>Stack</span></h2>
-        
+       
         <div class="orbital-container">
             <div class="center-text">
                 <h3>Our Technology Stack</h3>
@@ -2123,4 +2224,4 @@ document.querySelectorAll('.footer-dropdown-header').forEach(header => {
     <script src="../script/30min-booking.js"></script>
 
 </body>
-</html>
+</html

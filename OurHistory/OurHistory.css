@@ -2220,7 +2220,7 @@ body {
   }
 
   .timeline-icon {
-    left: 50% !important;
+    left: 45% !important;
     right: auto !important;
     top: -55px !important;
     transform: translateX(-50%);

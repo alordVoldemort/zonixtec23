@@ -153,6 +153,7 @@
             border: none;
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+            text-decoration: none;
         }
 
         .cta-button:hover {
@@ -603,6 +604,7 @@
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             display: inline-block;
+            text-decoration: none;
         }
 
         .cta-button-large:hover {

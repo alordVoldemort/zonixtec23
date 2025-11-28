@@ -72,105 +72,7 @@
         }
 
         /* ===== Header Styles ===== */
-        header {
-            background: rgba(15, 23, 42, 0.85);
-            backdrop-filter: blur(10px);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            border-bottom: 1px solid rgba(100, 116, 139, 0.2);
-        }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-        }
-
-        .logo {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--light);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-
-        .logo span {
-            color: var(--secondary);
-        }
-
-        .logo .tech {
-            color: var(--secondary);
-        }
-
-        .logo i {
-            margin-right: 10px;
-            color: var(--secondary);
-            font-size: 1.5rem;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 25px;
-            align-items: center;
-        }
-
-        .nav-links a {
-            color: var(--light);
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links a:not(.cta-button):hover {
-            color: var(--secondary);
-        }
-
-        .nav-links a:not(.cta-button)::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--secondary);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:not(.cta-button):hover::after {
-            width: 100%;
-        }
-
-        .cta-button {
-            background: var(--tech-gradient);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            color: var(--light);
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
 
         /* Cloud Solutions Hero Section */
         .cloud-hero {
@@ -183,7 +85,7 @@
         .cloud-hero::before {
             content: "";
             position: absolute;
-            top: 0;
+            top: 0;  
             left: 0;
             width: 100%;
             height: 100%;
@@ -226,7 +128,7 @@
         .cloud-animation {
             position: relative;
             height: 300px;
-            margin: 50px auto;
+            margin: 50px auto; 
             width: 90%;
             max-width: 800px;
             perspective: 1200px;
