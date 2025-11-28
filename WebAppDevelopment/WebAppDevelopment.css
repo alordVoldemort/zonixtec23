@@ -1344,10 +1344,14 @@ h6 {
     .faq-answer {
         padding: 0 15px;
         font-size: 0.9rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
     }
     
     .faq-item.active .faq-answer {
         padding: 0 15px 15px;
+        max-height: 500px;
     }
     
     /* CTA Section Mobile */
@@ -2302,9 +2306,17 @@ h6 {
     }
     
     .faq-answer {
-        padding: 0 20px 18px;
+        padding: 0 20px;
         font-size: 1rem;
         line-height: 1.7;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+    
+    .faq-item.active .faq-answer {
+        padding: 0 20px 18px;
+        max-height: 500px;
     }
 }
 
