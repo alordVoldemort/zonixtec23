@@ -185,6 +185,11 @@
             position: relative;
         }
 
+        .services-hero-content {
+            width: 100%;
+            max-width: 100%;
+        }
+
         .services-hero-title {
             font-family: 'Orbitron', sans-serif;
             font-size: 3.5rem;
@@ -219,7 +224,7 @@
             color: #cbd5e1;
             margin-bottom: 40px;
             line-height: 1.8;
-            max-width: 800px;
+            max-width: 100%;
             margin-left: auto;
             margin-right: auto;
             text-align: left;
