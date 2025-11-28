@@ -143,12 +143,7 @@
             border-bottom: 1px solid rgba(100, 116, 139, 0.2);
         }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-        }
+        
 
         .logo {
             font-family: 'Orbitron', sans-serif;
@@ -174,39 +169,7 @@
             font-size: 1.5rem;
         }
 
-        .nav-links {
-            display: flex;
-            gap: 25px;
-            align-items: center;
-        }
-
-        .nav-links a {
-            color: var(--light);
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links a:not(.cta-button):hover {
-            color: var(--secondary);
-        }
-
-        .nav-links a:not(.cta-button)::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--secondary);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:not(.cta-button):hover::after {
-            width: 100%;
-        }
+    
 
         .cta-button {
             background: var(--tech-gradient);
@@ -226,16 +189,11 @@
             box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
         }
 
-        .mobile-menu-btn {
-            display: none;
-            color: var(--light);
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
+        
 
         /* Digital Marketing Section */
         .digital-marketing-section {
-            padding: 150px 0 100px;
+            padding: 90px 0 80px;
             position: relative;
         }
 
@@ -468,9 +426,7 @@
         }
 
         /* What We Bring Section */
-        .what-we-bring {
-            margin-bottom: 80px;
-        }
+     
 
         .what-we-bring-container {
             background: rgba(15, 23, 42, 0.5);
@@ -942,32 +898,7 @@
         }
 
         @media (max-width: 768px) {
-            .nav-links {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 80%;
-                max-width: 300px;
-                height: 100vh;
-                background-color: rgba(15, 23, 42, 0.95);
-                backdrop-filter: blur(10px);
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 30px;
-                transition: right 0.3s ease;
-                z-index: 999;
-            }
-
-            .nav-links.active {
-                right: 0;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-                z-index: 1000;
-            }
-
+            
             .hero-text h1 {
                 font-size: 36px;
             }
